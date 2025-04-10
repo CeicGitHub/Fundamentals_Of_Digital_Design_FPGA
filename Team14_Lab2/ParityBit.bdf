@@ -85,6 +85,7 @@ refer to the applicable agreement for further details.
 		(line (pt 82 8)(pt 78 12))
 		(line (pt 78 12)(pt 82 8))
 	)
+	(annotation_block (location)(rect 696 400 760 424))
 )
 (pin
 	(output)
@@ -101,6 +102,7 @@ refer to the applicable agreement for further details.
 		(line (pt 82 8)(pt 78 12))
 		(line (pt 78 12)(pt 82 8))
 	)
+	(annotation_block (location)(rect 704 424 768 448))
 )
 (pin
 	(output)
@@ -117,6 +119,7 @@ refer to the applicable agreement for further details.
 		(line (pt 82 8)(pt 78 12))
 		(line (pt 78 12)(pt 82 8))
 	)
+	(annotation_block (location)(rect 696 456 760 480))
 )
 (pin
 	(output)
@@ -133,6 +136,7 @@ refer to the applicable agreement for further details.
 		(line (pt 82 8)(pt 78 12))
 		(line (pt 78 12)(pt 82 8))
 	)
+	(annotation_block (location)(rect 704 480 768 504))
 )
 (pin
 	(output)
@@ -149,6 +153,7 @@ refer to the applicable agreement for further details.
 		(line (pt 82 8)(pt 78 12))
 		(line (pt 78 12)(pt 82 8))
 	)
+	(annotation_block (location)(rect 696 528 760 552))
 )
 (pin
 	(output)
@@ -165,6 +170,7 @@ refer to the applicable agreement for further details.
 		(line (pt 82 8)(pt 78 12))
 		(line (pt 78 12)(pt 82 8))
 	)
+	(annotation_block (location)(rect 704 552 768 576))
 )
 (pin
 	(output)
@@ -181,6 +187,7 @@ refer to the applicable agreement for further details.
 		(line (pt 82 8)(pt 78 12))
 		(line (pt 78 12)(pt 82 8))
 	)
+	(annotation_block (location)(rect 696 592 760 616))
 )
 (symbol
 	(rect 504 -128 568 -80)
@@ -625,16 +632,6 @@ refer to the applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "DATA[0]" (rect 472 376 512 393)(font "Intel Clear" ))
-	(pt 448 392)
-	(pt 520 392)
-)
-(connector
-	(text "DATA[1]" (rect 472 400 512 417)(font "Intel Clear" ))
-	(pt 448 416)
-	(pt 528 416)
-)
-(connector
 	(pt 448 392)
 	(pt 448 416)
 	(bus)
@@ -658,31 +655,6 @@ refer to the applicable agreement for further details.
 	(pt 448 520)
 	(pt 448 544)
 	(bus)
-)
-(connector
-	(text "DATA[2]" (rect 472 432 512 449)(font "Intel Clear" ))
-	(pt 448 448)
-	(pt 520 448)
-)
-(connector
-	(text "DATA[3]" (rect 472 456 512 473)(font "Intel Clear" ))
-	(pt 448 472)
-	(pt 528 472)
-)
-(connector
-	(text "DATA[4]" (rect 464 504 504 521)(font "Intel Clear" ))
-	(pt 448 520)
-	(pt 520 520)
-)
-(connector
-	(text "DATA[5]" (rect 472 528 512 545)(font "Intel Clear" ))
-	(pt 448 544)
-	(pt 528 544)
-)
-(connector
-	(text "DATA[6]" (rect 472 568 512 585)(font "Intel Clear" ))
-	(pt 448 584)
-	(pt 520 584)
 )
 (connector
 	(pt 448 544)
@@ -697,6 +669,48 @@ refer to the applicable agreement for further details.
 (connector
 	(pt 568 -104)
 	(pt 616 -104)
+)
+(connector
+	(text "DATA[0]" (rect 472 376 512 393)(font "Intel Clear" (color 255 0 0)))
+	(pt 448 392)
+	(pt 520 392)
+	(color 255 0 0)
+)
+(connector
+	(text "DATA[1]" (rect 472 400 512 417)(font "Intel Clear" (color 255 0 0)))
+	(pt 448 416)
+	(pt 528 416)
+	(color 255 0 0)
+)
+(connector
+	(text "DATA[2]" (rect 472 432 512 449)(font "Intel Clear" (color 255 0 0)))
+	(pt 448 448)
+	(pt 520 448)
+	(color 255 0 0)
+)
+(connector
+	(text "DATA[3]" (rect 472 456 512 473)(font "Intel Clear" (color 255 0 0)))
+	(pt 448 472)
+	(pt 528 472)
+	(color 255 0 0)
+)
+(connector
+	(text "DATA[4]" (rect 464 504 504 521)(font "Intel Clear" (color 255 0 0)))
+	(pt 448 520)
+	(pt 520 520)
+	(color 255 0 0)
+)
+(connector
+	(text "DATA[5]" (rect 472 528 512 545)(font "Intel Clear" (color 255 0 0)))
+	(pt 448 544)
+	(pt 528 544)
+	(color 255 0 0)
+)
+(connector
+	(text "DATA[6]" (rect 472 568 512 585)(font "Intel Clear" (color 255 0 0)))
+	(pt 448 584)
+	(pt 520 584)
+	(color 255 0 0)
 )
 (junction (pt 448 328))
 (junction (pt 448 312))
@@ -715,4 +729,6 @@ refer to the applicable agreement for further details.
 (text "**TEAM14_LAB2**" (rect 64 -8 282 16)(font "Arial Rounded MT Bold" (color 0 0 255)(font_size 16)))
 (text "CESAR EDUARDO INDA CENICEROS" (rect -24 32 335 57)(font "Intel Clear" (color 255 85 0)(font_size 14)))
 (text "ALONSO EMMANUEL LOPEZ MACIAS" (rect -24 64 350 89)(font "Intel Clear" (color 255 85 0)(font_size 14)))
+(text "LEDS FOR DATA(FRAME)" (rect 840 488 986 507)(font "Intel Clear" (color 255 0 0)(font_size 8)))
 (rectangle (rect -32 -32 352 104))
+(rectangle (rect 424 376 992 624))
