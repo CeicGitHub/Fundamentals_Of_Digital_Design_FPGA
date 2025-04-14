@@ -1,15 +1,15 @@
 |bcd_decoder
-a <= inst23.DB_MAX_OUTPUT_PORT_TYPE
-bdc[0] => LPM_DECODE:inst99.data[0]
-bdc[1] => LPM_DECODE:inst99.data[1]
-bdc[2] => LPM_DECODE:inst99.data[2]
-bdc[3] => LPM_DECODE:inst99.data[3]
-b <= inst25.DB_MAX_OUTPUT_PORT_TYPE
-c <= inst_49.DB_MAX_OUTPUT_PORT_TYPE
-d <= inst50.DB_MAX_OUTPUT_PORT_TYPE
-e <= inst51.DB_MAX_OUTPUT_PORT_TYPE
-f <= inst52.DB_MAX_OUTPUT_PORT_TYPE
-g <= inst53.DB_MAX_OUTPUT_PORT_TYPE
+a <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+bits[0] => LPM_DECODE:inst99.data[0]
+bits[1] => LPM_DECODE:inst99.data[1]
+bits[2] => LPM_DECODE:inst99.data[2]
+bits[3] => LPM_DECODE:inst99.data[3]
+b <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+c <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+d <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+e <= inst15.DB_MAX_OUTPUT_PORT_TYPE
+f <= inst18.DB_MAX_OUTPUT_PORT_TYPE
+g <= inst22.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |bcd_decoder|LPM_DECODE:inst99

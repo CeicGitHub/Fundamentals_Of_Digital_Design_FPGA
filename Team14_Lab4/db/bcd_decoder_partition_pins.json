@@ -32,19 +32,19 @@
 					"strict" : false
 				},
 				{
-					"name" : "bdc[0]",
+					"name" : "bits[1]",
 					"strict" : false
 				},
 				{
-					"name" : "bdc[1]",
+					"name" : "bits[2]",
 					"strict" : false
 				},
 				{
-					"name" : "bdc[2]",
+					"name" : "bits[3]",
 					"strict" : false
 				},
 				{
-					"name" : "bdc[3]",
+					"name" : "bits[0]",
 					"strict" : false
 				}
 			]

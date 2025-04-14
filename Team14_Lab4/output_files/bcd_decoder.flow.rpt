@@ -1,5 +1,5 @@
 Flow report for bcd_decoder
-Mon Apr 14 10:43:48 2025
+Mon Apr 14 13:44:36 2025
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,7 +40,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Mon Apr 14 10:43:45 2025       ;
+; Flow Status                        ; Successful - Mon Apr 14 13:44:33 2025       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; bcd_decoder                                 ;
 ; Top-level Entity Name              ; bcd_decoder                                 ;
@@ -64,7 +64,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 04/14/2025 10:43:21 ;
+; Start date & time ; 04/14/2025 13:44:10 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; bcd_decoder         ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 273184157047325.174465260005108        ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 273184157047325.174466345011536        ; --            ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --         ;
 ; NOMINAL_CORE_SUPPLY_VOLTAGE         ; 1.2V                                   ; --            ; --          ; --         ;
@@ -92,10 +92,10 @@ refer to the applicable agreement for further details.
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Analysis & Synthesis ; 00:00:11     ; 1.0                     ; 4768 MB             ; 00:00:22                           ;
-; Fitter               ; 00:00:08     ; 1.0                     ; 5816 MB             ; 00:00:16                           ;
-; Assembler            ; 00:00:03     ; 1.0                     ; 4680 MB             ; 00:00:03                           ;
+; Fitter               ; 00:00:08     ; 1.0                     ; 5821 MB             ; 00:00:14                           ;
+; Assembler            ; 00:00:03     ; 1.0                     ; 4679 MB             ; 00:00:03                           ;
 ; Timing Analyzer      ; 00:00:02     ; 1.0                     ; 4859 MB             ; 00:00:02                           ;
-; Total                ; 00:00:24     ; --                      ; --                  ; 00:00:43                           ;
+; Total                ; 00:00:24     ; --                      ; --                  ; 00:00:41                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

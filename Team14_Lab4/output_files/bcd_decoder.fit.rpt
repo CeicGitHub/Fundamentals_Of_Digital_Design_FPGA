@@ -1,5 +1,5 @@
 Fitter report for bcd_decoder
-Mon Apr 14 10:43:40 2025
+Mon Apr 14 13:44:29 2025
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -62,7 +62,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Mon Apr 14 10:43:40 2025       ;
+; Fitter Status                      ; Successful - Mon Apr 14 13:44:29 2025       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; bcd_decoder                                 ;
 ; Top-level Entity Name              ; bcd_decoder                                 ;
@@ -321,16 +321,16 @@ The pin-out file can be found in D:/Quartus_Labs/Fundamentals_Of_Digital_Design_
 +---------------------------------------------+----------------------+--------------------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Input Pins                                                                                                                                                                                                                                                                              ;
-+--------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+-----------+
-; Name   ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; Power Up High ; PCI I/O Enabled ; Bus Hold ; Weak Pull Up ; I/O Standard ; Termination Control Block ; Location assigned by ; Slew Rate ;
-+--------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+-----------+
-; bdc[0] ; AA23  ; 5        ; 115          ; 10           ; 7            ; 7                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
-; bdc[1] ; AA22  ; 5        ; 115          ; 6            ; 14           ; 7                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
-; bdc[2] ; Y24   ; 5        ; 115          ; 13           ; 0            ; 7                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
-; bdc[3] ; Y23   ; 5        ; 115          ; 14           ; 7            ; 7                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
-+--------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+-----------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Input Pins                                                                                                                                                                                                                                                                               ;
++---------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+-----------+
+; Name    ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; Power Up High ; PCI I/O Enabled ; Bus Hold ; Weak Pull Up ; I/O Standard ; Termination Control Block ; Location assigned by ; Slew Rate ;
++---------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+-----------+
+; bits[0] ; AA23  ; 5        ; 115          ; 10           ; 7            ; 7                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
+; bits[1] ; AA22  ; 5        ; 115          ; 6            ; 14           ; 7                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
+; bits[2] ; Y24   ; 5        ; 115          ; 13           ; 0            ; 7                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
+; bits[3] ; Y23   ; 5        ; 115          ; 14           ; 7            ; 7                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
++---------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+-----------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -437,8 +437,8 @@ The pin-out file can be found in D:/Quartus_Labs/Fundamentals_Of_Digital_Design_
 ; AA19     ; 264        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; AA20     ;            ;          ; GNDA4                                                     ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; AA21     ; 269        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; AA22     ; 275        ; 5        ; bdc[1]                                                    ; input  ; 2.5 V        ;         ; Row I/O    ; Y               ; no       ; Off          ;
-; AA23     ; 280        ; 5        ; bdc[0]                                                    ; input  ; 2.5 V        ;         ; Row I/O    ; Y               ; no       ; Off          ;
+; AA22     ; 275        ; 5        ; bits[1]                                                   ; input  ; 2.5 V        ;         ; Row I/O    ; Y               ; no       ; Off          ;
+; AA23     ; 280        ; 5        ; bits[0]                                                   ; input  ; 2.5 V        ;         ; Row I/O    ; Y               ; no       ; Off          ;
 ; AA24     ; 279        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
 ; AA25     ; 294        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; AA26     ; 293        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
@@ -1164,8 +1164,8 @@ The pin-out file can be found in D:/Quartus_Labs/Fundamentals_Of_Digital_Design_
 ; Y20      ;            ;          ; VCCD_PLL4                                                 ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
 ; Y21      ;            ; --       ; VCCA4                                                     ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; Y22      ; 320        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
-; Y23      ; 288        ; 5        ; bdc[3]                                                    ; input  ; 2.5 V        ;         ; Row I/O    ; Y               ; no       ; Off          ;
-; Y24      ; 287        ; 5        ; bdc[2]                                                    ; input  ; 2.5 V        ;         ; Row I/O    ; Y               ; no       ; Off          ;
+; Y23      ; 288        ; 5        ; bits[3]                                                   ; input  ; 2.5 V        ;         ; Row I/O    ; Y               ; no       ; Off          ;
+; Y24      ; 287        ; 5        ; bits[2]                                                   ; input  ; 2.5 V        ;         ; Row I/O    ; Y               ; no       ; Off          ;
 ; Y25      ; 298        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; Y26      ; 297        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; Y27      ; 336        ; 5        ; GND+                                                      ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
@@ -1186,10 +1186,10 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 ; e        ; Incomplete set of assignments ;
 ; f        ; Incomplete set of assignments ;
 ; g        ; Incomplete set of assignments ;
-; bdc[0]   ; Incomplete set of assignments ;
-; bdc[1]   ; Incomplete set of assignments ;
-; bdc[2]   ; Incomplete set of assignments ;
-; bdc[3]   ; Incomplete set of assignments ;
+; bits[1]  ; Incomplete set of assignments ;
+; bits[2]  ; Incomplete set of assignments ;
+; bits[3]  ; Incomplete set of assignments ;
+; bits[0]  ; Incomplete set of assignments ;
 +----------+-------------------------------+
 
 
@@ -1203,23 +1203,23 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+----------------------------------------------------------------------------------------+
-; Delay Chain Summary                                                                    ;
-+--------+----------+---------------+---------------+-----------------------+-----+------+
-; Name   ; Pin Type ; Pad to Core 0 ; Pad to Core 1 ; Pad to Input Register ; TCO ; TCOE ;
-+--------+----------+---------------+---------------+-----------------------+-----+------+
-; a      ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; b      ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; c      ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; d      ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; e      ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; f      ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; g      ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; bdc[0] ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
-; bdc[1] ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
-; bdc[2] ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
-; bdc[3] ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
-+--------+----------+---------------+---------------+-----------------------+-----+------+
++-----------------------------------------------------------------------------------------+
+; Delay Chain Summary                                                                     ;
++---------+----------+---------------+---------------+-----------------------+-----+------+
+; Name    ; Pin Type ; Pad to Core 0 ; Pad to Core 1 ; Pad to Input Register ; TCO ; TCOE ;
++---------+----------+---------------+---------------+-----------------------+-----+------+
+; a       ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; b       ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; c       ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; d       ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; e       ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; f       ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; g       ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; bits[1] ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
+; bits[2] ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
+; bits[3] ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
+; bits[0] ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
++---------+----------+---------------+---------------+-----------------------+-----+------+
 
 
 +---------------------------------------------------+
@@ -1227,38 +1227,38 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------+-------------------+---------+
 ; Source Pin / Fanout ; Pad To Core Index ; Setting ;
 +---------------------+-------------------+---------+
-; bdc[0]              ;                   ;         ;
-;      - inst22       ; 1                 ; 6       ;
-;      - inst24~0     ; 1                 ; 6       ;
-;      - inst108~0    ; 1                 ; 6       ;
-;      - inst22~0     ; 1                 ; 6       ;
-;      - inst_2       ; 1                 ; 6       ;
-;      - inst_3~0     ; 1                 ; 6       ;
-;      - inst30       ; 1                 ; 6       ;
-; bdc[1]              ;                   ;         ;
-;      - inst22       ; 1                 ; 6       ;
-;      - inst24~0     ; 1                 ; 6       ;
-;      - inst108~0    ; 1                 ; 6       ;
-;      - inst22~0     ; 1                 ; 6       ;
-;      - inst_2       ; 1                 ; 6       ;
-;      - inst_3~0     ; 1                 ; 6       ;
-;      - inst30       ; 1                 ; 6       ;
-; bdc[2]              ;                   ;         ;
-;      - inst22       ; 1                 ; 6       ;
-;      - inst24~0     ; 1                 ; 6       ;
-;      - inst108~0    ; 1                 ; 6       ;
-;      - inst22~0     ; 1                 ; 6       ;
-;      - inst_2       ; 1                 ; 6       ;
-;      - inst_3~0     ; 1                 ; 6       ;
-;      - inst30       ; 1                 ; 6       ;
-; bdc[3]              ;                   ;         ;
-;      - inst22       ; 1                 ; 6       ;
-;      - inst24~0     ; 1                 ; 6       ;
-;      - inst108~0    ; 1                 ; 6       ;
-;      - inst22~0     ; 1                 ; 6       ;
-;      - inst_2       ; 1                 ; 6       ;
-;      - inst_3~0     ; 1                 ; 6       ;
-;      - inst30       ; 1                 ; 6       ;
+; bits[1]             ;                   ;         ;
+;      - inst90~0     ; 1                 ; 6       ;
+;      - inst5~0      ; 1                 ; 6       ;
+;      - inst92~0     ; 1                 ; 6       ;
+;      - inst11~0     ; 1                 ; 6       ;
+;      - inst14~0     ; 1                 ; 6       ;
+;      - inst17~0     ; 1                 ; 6       ;
+;      - inst21~0     ; 1                 ; 6       ;
+; bits[2]             ;                   ;         ;
+;      - inst90~0     ; 1                 ; 6       ;
+;      - inst5~0      ; 1                 ; 6       ;
+;      - inst92~0     ; 1                 ; 6       ;
+;      - inst11~0     ; 1                 ; 6       ;
+;      - inst14~0     ; 1                 ; 6       ;
+;      - inst17~0     ; 1                 ; 6       ;
+;      - inst21~0     ; 1                 ; 6       ;
+; bits[3]             ;                   ;         ;
+;      - inst90~0     ; 1                 ; 6       ;
+;      - inst5~0      ; 1                 ; 6       ;
+;      - inst92~0     ; 1                 ; 6       ;
+;      - inst11~0     ; 1                 ; 6       ;
+;      - inst14~0     ; 1                 ; 6       ;
+;      - inst17~0     ; 1                 ; 6       ;
+;      - inst21~0     ; 1                 ; 6       ;
+; bits[0]             ;                   ;         ;
+;      - inst90~0     ; 1                 ; 6       ;
+;      - inst5~0      ; 1                 ; 6       ;
+;      - inst92~0     ; 1                 ; 6       ;
+;      - inst11~0     ; 1                 ; 6       ;
+;      - inst14~0     ; 1                 ; 6       ;
+;      - inst17~0     ; 1                 ; 6       ;
+;      - inst21~0     ; 1                 ; 6       ;
 +---------------------+-------------------+---------+
 
 
@@ -1415,10 +1415,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; e                  ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; f                  ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; g                  ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; bdc[0]             ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; bdc[1]             ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; bdc[2]             ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; bdc[3]             ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; bits[1]            ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; bits[2]            ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; bits[3]            ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; bits[0]            ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 +--------------------+-----------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+
 
 
@@ -1509,7 +1509,7 @@ Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were
     Info (170201): Optimizations that may affect the design's routability were skipped
     Info (170200): Optimizations that may affect the design's timing were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:00
-Info (11888): Total time spent on timing analysis during the Fitter is 0.05 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.04 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
@@ -1517,10 +1517,10 @@ Info (334004): Delay annotation completed successfully
 Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
 Info (144001): Generated suppressed messages file D:/Quartus_Labs/Fundamentals_Of_Digital_Design_FPGA/Team14_Lab4/output_files/bcd_decoder.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 5816 megabytes
-    Info: Processing ended: Mon Apr 14 10:43:41 2025
-    Info: Elapsed time: 00:00:09
-    Info: Total CPU time (on all processors): 00:00:16
+    Info: Peak virtual memory: 5821 megabytes
+    Info: Processing ended: Mon Apr 14 13:44:29 2025
+    Info: Elapsed time: 00:00:08
+    Info: Total CPU time (on all processors): 00:00:14
 
 
 +----------------------------+
