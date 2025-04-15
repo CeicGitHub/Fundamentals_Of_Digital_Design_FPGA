@@ -32,6 +32,34 @@
 					"strict" : false
 				},
 				{
+					"name" : "a2",
+					"strict" : false
+				},
+				{
+					"name" : "b2",
+					"strict" : false
+				},
+				{
+					"name" : "d2",
+					"strict" : false
+				},
+				{
+					"name" : "c2",
+					"strict" : false
+				},
+				{
+					"name" : "e2",
+					"strict" : false
+				},
+				{
+					"name" : "f2",
+					"strict" : false
+				},
+				{
+					"name" : "g2",
+					"strict" : false
+				},
+				{
 					"name" : "bits[1]",
 					"strict" : false
 				},
@@ -45,6 +73,22 @@
 				},
 				{
 					"name" : "bits[0]",
+					"strict" : false
+				},
+				{
+					"name" : "bits_2[1]",
+					"strict" : false
+				},
+				{
+					"name" : "bits_2[2]",
+					"strict" : false
+				},
+				{
+					"name" : "bits_2[3]",
+					"strict" : false
+				},
+				{
+					"name" : "bits_2[0]",
 					"strict" : false
 				}
 			]

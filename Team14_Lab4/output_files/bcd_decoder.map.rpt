@@ -1,5 +1,5 @@
 Analysis & Synthesis report for bcd_decoder
-Mon Apr 14 13:44:20 2025
+Mon Apr 14 17:36:14 2025
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -15,9 +15,10 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
   9. Parameter Settings for User Entity Instance: LPM_DECODE:inst99
- 10. Post-Synthesis Netlist Statistics for Top Partition
- 11. Elapsed Time Per Partition
- 12. Analysis & Synthesis Messages
+ 10. Parameter Settings for User Entity Instance: LPM_DECODE:inst100
+ 11. Post-Synthesis Netlist Statistics for Top Partition
+ 12. Elapsed Time Per Partition
+ 13. Analysis & Synthesis Messages
 
 
 
@@ -43,16 +44,16 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Apr 14 13:44:20 2025       ;
+; Analysis & Synthesis Status        ; Successful - Mon Apr 14 17:36:14 2025       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; bcd_decoder                                 ;
 ; Top-level Entity Name              ; bcd_decoder                                 ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 7                                           ;
-;     Total combinational functions  ; 7                                           ;
+; Total logic elements               ; 14                                          ;
+;     Total combinational functions  ; 14                                          ;
 ;     Dedicated logic registers      ; 0                                           ;
 ; Total registers                    ; 0                                           ;
-; Total pins                         ; 11                                          ;
+; Total pins                         ; 22                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -183,29 +184,29 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+---------------+
 ; Resource                                    ; Usage         ;
 +---------------------------------------------+---------------+
-; Estimated Total logic elements              ; 7             ;
+; Estimated Total logic elements              ; 14            ;
 ;                                             ;               ;
-; Total combinational functions               ; 7             ;
+; Total combinational functions               ; 14            ;
 ; Logic element usage by number of LUT inputs ;               ;
-;     -- 4 input functions                    ; 7             ;
+;     -- 4 input functions                    ; 14            ;
 ;     -- 3 input functions                    ; 0             ;
 ;     -- <=2 input functions                  ; 0             ;
 ;                                             ;               ;
 ; Logic elements by mode                      ;               ;
-;     -- normal mode                          ; 7             ;
+;     -- normal mode                          ; 14            ;
 ;     -- arithmetic mode                      ; 0             ;
 ;                                             ;               ;
 ; Total registers                             ; 0             ;
 ;     -- Dedicated logic registers            ; 0             ;
 ;     -- I/O registers                        ; 0             ;
 ;                                             ;               ;
-; I/O pins                                    ; 11            ;
+; I/O pins                                    ; 22            ;
 ;                                             ;               ;
 ; Embedded Multiplier 9-bit elements          ; 0             ;
 ;                                             ;               ;
 ; Maximum fan-out node                        ; bits[1]~input ;
 ; Maximum fan-out                             ; 7             ;
-; Total fan-out                               ; 46            ;
+; Total fan-out                               ; 92            ;
 ; Average fan-out                             ; 1.59          ;
 +---------------------------------------------+---------------+
 
@@ -215,7 +216,7 @@ refer to the applicable agreement for further details.
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
-; |bcd_decoder               ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 11   ; 0            ; |bcd_decoder        ; bcd_decoder ; work         ;
+; |bcd_decoder               ; 14 (14)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 22   ; 0            ; |bcd_decoder        ; bcd_decoder ; work         ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -254,16 +255,35 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++-----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: LPM_DECODE:inst100 ;
++------------------------+--------------+-------------------------+
+; Parameter Name         ; Value        ; Type                    ;
++------------------------+--------------+-------------------------+
+; LPM_WIDTH              ; 4            ; Untyped                 ;
+; LPM_DECODES            ; 16           ; Untyped                 ;
+; LPM_PIPELINE           ; 0            ; Untyped                 ;
+; CASCADE_CHAIN          ; MANUAL       ; Untyped                 ;
+; DEVICE_FAMILY          ; Cyclone IV E ; Untyped                 ;
+; CBXI_PARAMETER         ; decode_idg   ; Untyped                 ;
+; AUTO_CARRY_CHAINS      ; ON           ; AUTO_CARRY              ;
+; IGNORE_CARRY_BUFFERS   ; OFF          ; IGNORE_CARRY            ;
+; AUTO_CASCADE_CHAINS    ; ON           ; AUTO_CASCADE            ;
+; IGNORE_CASCADE_BUFFERS ; OFF          ; IGNORE_CASCADE          ;
++------------------------+--------------+-------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +-----------------------------------------------------+
 ; Post-Synthesis Netlist Statistics for Top Partition ;
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 11                          ;
-; cycloneiii_lcell_comb ; 14                          ;
-;     normal            ; 14                          ;
-;         1 data inputs ; 7                           ;
-;         4 data inputs ; 7                           ;
+; boundary_port         ; 22                          ;
+; cycloneiii_lcell_comb ; 28                          ;
+;     normal            ; 28                          ;
+;         1 data inputs ; 14                          ;
+;         4 data inputs ; 14                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 2.00                        ;
 ; Average LUT depth     ; 2.00                        ;
@@ -285,7 +305,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Mon Apr 14 13:44:09 2025
+    Info: Processing started: Mon Apr 14 17:35:45 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off bcd_decoder -c bcd_decoder
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
@@ -303,14 +323,14 @@ Info (12128): Elaborating entity "decode_idg" for hierarchy "LPM_DECODE:inst99|d
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 18 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 4 input pins
-    Info (21059): Implemented 7 output pins
-    Info (21061): Implemented 7 logic cells
+Info (21057): Implemented 36 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 8 input pins
+    Info (21059): Implemented 14 output pins
+    Info (21061): Implemented 14 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4768 megabytes
-    Info: Processing ended: Mon Apr 14 13:44:20 2025
-    Info: Elapsed time: 00:00:11
-    Info: Total CPU time (on all processors): 00:00:22
+    Info: Peak virtual memory: 4770 megabytes
+    Info: Processing ended: Mon Apr 14 17:36:14 2025
+    Info: Elapsed time: 00:00:29
+    Info: Total CPU time (on all processors): 00:00:33
 
 
