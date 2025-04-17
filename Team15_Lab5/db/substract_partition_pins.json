@@ -40,6 +40,70 @@
 					"strict" : false
 				},
 				{
+					"name" : "ledr_a17",
+					"strict" : false
+				},
+				{
+					"name" : "ledr_a10",
+					"strict" : false
+				},
+				{
+					"name" : "ledr_a11",
+					"strict" : false
+				},
+				{
+					"name" : "ledr_a12",
+					"strict" : false
+				},
+				{
+					"name" : "ledr_a13",
+					"strict" : false
+				},
+				{
+					"name" : "ledr_a14",
+					"strict" : false
+				},
+				{
+					"name" : "ledr_a15",
+					"strict" : false
+				},
+				{
+					"name" : "ledr_a16",
+					"strict" : false
+				},
+				{
+					"name" : "ledr_b0",
+					"strict" : false
+				},
+				{
+					"name" : "ledr_b1",
+					"strict" : false
+				},
+				{
+					"name" : "ledr_b2",
+					"strict" : false
+				},
+				{
+					"name" : "ledr_b3",
+					"strict" : false
+				},
+				{
+					"name" : "ledr_b4",
+					"strict" : false
+				},
+				{
+					"name" : "ledr_b5",
+					"strict" : false
+				},
+				{
+					"name" : "ledr_b6",
+					"strict" : false
+				},
+				{
+					"name" : "ledr_b7",
+					"strict" : false
+				},
+				{
 					"name" : "A[7]",
 					"strict" : false
 				},

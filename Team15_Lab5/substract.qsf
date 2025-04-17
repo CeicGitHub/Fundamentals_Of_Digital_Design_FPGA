@@ -78,4 +78,20 @@ set_location_assignment PIN_G20 -to Y[5]
 set_location_assignment PIN_G22 -to Y[6]
 set_location_assignment PIN_G21 -to Y[7]
 set_location_assignment PIN_F17 -to Overflow
+set_location_assignment PIN_J15 -to ledr_a10
+set_location_assignment PIN_H16 -to ledr_a11
+set_location_assignment PIN_J16 -to ledr_a12
+set_location_assignment PIN_H17 -to ledr_a13
+set_location_assignment PIN_F15 -to ledr_a14
+set_location_assignment PIN_G15 -to ledr_a15
+set_location_assignment PIN_G16 -to ledr_a16
+set_location_assignment PIN_H15 -to ledr_a17
+set_location_assignment PIN_G19 -to ledr_b0
+set_location_assignment PIN_F19 -to ledr_b1
+set_location_assignment PIN_E19 -to ledr_b2
+set_location_assignment PIN_F21 -to ledr_b3
+set_location_assignment PIN_F18 -to ledr_b4
+set_location_assignment PIN_E18 -to ledr_b5
+set_location_assignment PIN_J19 -to ledr_b6
+set_location_assignment PIN_H19 -to ledr_b7
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
