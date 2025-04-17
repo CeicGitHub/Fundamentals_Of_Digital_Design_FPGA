@@ -1,0 +1,191 @@
+|substract
+Overflow <= inst94.DB_MAX_OUTPUT_PORT_TYPE
+A[0] => 8bit_adder:inst91.A[0]
+A[1] => 8bit_adder:inst91.A[1]
+A[2] => 8bit_adder:inst91.A[2]
+A[3] => 8bit_adder:inst91.A[3]
+A[4] => 8bit_adder:inst91.A[4]
+A[5] => 8bit_adder:inst91.A[5]
+A[6] => 8bit_adder:inst91.A[6]
+A[7] => inst92.IN0
+A[7] => inst93.IN0
+A[7] => 8bit_adder:inst91.A[7]
+B[0] => LPM_INV:inst90.data[0]
+B[1] => LPM_INV:inst90.data[1]
+B[2] => LPM_INV:inst90.data[2]
+B[3] => LPM_INV:inst90.data[3]
+B[4] => LPM_INV:inst90.data[4]
+B[5] => LPM_INV:inst90.data[5]
+B[6] => LPM_INV:inst90.data[6]
+B[7] => inst92.IN1
+B[7] => LPM_INV:inst90.data[7]
+Y[0] <= 8bit_adder:inst91.Y[0]
+Y[1] <= 8bit_adder:inst91.Y[1]
+Y[2] <= 8bit_adder:inst91.Y[2]
+Y[3] <= 8bit_adder:inst91.Y[3]
+Y[4] <= 8bit_adder:inst91.Y[4]
+Y[5] <= 8bit_adder:inst91.Y[5]
+Y[6] <= 8bit_adder:inst91.Y[6]
+Y[7] <= 8bit_adder:inst91.Y[7]
+
+
+|substract|8bit_adder:inst91
+Cout <= 1bit_adder:inst7.Cout
+A[0] => 1bit_adder:inst.A
+A[1] => 1bit_adder:inst1.A
+A[2] => 1bit_adder:inst2.A
+A[3] => 1bit_adder:inst3.A
+A[4] => 1bit_adder:inst4.A
+A[5] => 1bit_adder:inst5.A
+A[6] => 1bit_adder:inst6.A
+A[7] => 1bit_adder:inst7.A
+B[0] => 1bit_adder:inst.B
+B[1] => 1bit_adder:inst1.B
+B[2] => 1bit_adder:inst2.B
+B[3] => 1bit_adder:inst3.B
+B[4] => 1bit_adder:inst4.B
+B[5] => 1bit_adder:inst5.B
+B[6] => 1bit_adder:inst6.B
+B[7] => 1bit_adder:inst7.B
+Cin => 1bit_adder:inst.Cin
+Y[0] <= 1bit_adder:inst.Y
+Y[1] <= 1bit_adder:inst1.Y
+Y[2] <= 1bit_adder:inst2.Y
+Y[3] <= 1bit_adder:inst3.Y
+Y[4] <= 1bit_adder:inst4.Y
+Y[5] <= 1bit_adder:inst5.Y
+Y[6] <= 1bit_adder:inst6.Y
+Y[7] <= 1bit_adder:inst7.Y
+
+
+|substract|8bit_adder:inst91|1bit_adder:inst7
+Y <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst3.IN1
+A => inst2.IN1
+B => inst.IN1
+B => inst2.IN0
+B => inst4.IN1
+Cin => inst1.IN1
+Cin => inst3.IN0
+Cin => inst4.IN0
+Cout <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|substract|8bit_adder:inst91|1bit_adder:inst6
+Y <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst3.IN1
+A => inst2.IN1
+B => inst.IN1
+B => inst2.IN0
+B => inst4.IN1
+Cin => inst1.IN1
+Cin => inst3.IN0
+Cin => inst4.IN0
+Cout <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|substract|8bit_adder:inst91|1bit_adder:inst5
+Y <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst3.IN1
+A => inst2.IN1
+B => inst.IN1
+B => inst2.IN0
+B => inst4.IN1
+Cin => inst1.IN1
+Cin => inst3.IN0
+Cin => inst4.IN0
+Cout <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|substract|8bit_adder:inst91|1bit_adder:inst4
+Y <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst3.IN1
+A => inst2.IN1
+B => inst.IN1
+B => inst2.IN0
+B => inst4.IN1
+Cin => inst1.IN1
+Cin => inst3.IN0
+Cin => inst4.IN0
+Cout <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|substract|8bit_adder:inst91|1bit_adder:inst3
+Y <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst3.IN1
+A => inst2.IN1
+B => inst.IN1
+B => inst2.IN0
+B => inst4.IN1
+Cin => inst1.IN1
+Cin => inst3.IN0
+Cin => inst4.IN0
+Cout <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|substract|8bit_adder:inst91|1bit_adder:inst2
+Y <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst3.IN1
+A => inst2.IN1
+B => inst.IN1
+B => inst2.IN0
+B => inst4.IN1
+Cin => inst1.IN1
+Cin => inst3.IN0
+Cin => inst4.IN0
+Cout <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|substract|8bit_adder:inst91|1bit_adder:inst1
+Y <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst3.IN1
+A => inst2.IN1
+B => inst.IN1
+B => inst2.IN0
+B => inst4.IN1
+Cin => inst1.IN1
+Cin => inst3.IN0
+Cin => inst4.IN0
+Cout <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|substract|8bit_adder:inst91|1bit_adder:inst
+Y <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst3.IN1
+A => inst2.IN1
+B => inst.IN1
+B => inst2.IN0
+B => inst4.IN1
+Cin => inst1.IN1
+Cin => inst3.IN0
+Cin => inst4.IN0
+Cout <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|substract|LPM_INV:inst90
+data[0] => result[0].IN0
+data[1] => result[1].IN0
+data[2] => result[2].IN0
+data[3] => result[3].IN0
+data[4] => result[4].IN0
+data[5] => result[5].IN0
+data[6] => result[6].IN0
+data[7] => result[7].IN0
+result[0] <= result[0].DB_MAX_OUTPUT_PORT_TYPE
+result[1] <= result[1].DB_MAX_OUTPUT_PORT_TYPE
+result[2] <= result[2].DB_MAX_OUTPUT_PORT_TYPE
+result[3] <= result[3].DB_MAX_OUTPUT_PORT_TYPE
+result[4] <= result[4].DB_MAX_OUTPUT_PORT_TYPE
+result[5] <= result[5].DB_MAX_OUTPUT_PORT_TYPE
+result[6] <= result[6].DB_MAX_OUTPUT_PORT_TYPE
+result[7] <= result[7].DB_MAX_OUTPUT_PORT_TYPE
+
+
