@@ -170,7 +170,7 @@ refer to the applicable agreement for further details.
 	(output)
 	(rect -40 96 136 112)
 	(text "OUTPUT" (rect 137 0 175 10)(font "Arial" (font_size 6)))
-	(text "ledsA[3..0]" (rect 5 0 59 12)(font "Arial" ))
+	(text "ledsA[3..0]" (rect 5 0 58 12)(font "Arial" ))
 	(pt 176 8)
 	(drawing
 		(line (pt 176 8)(pt 124 8))
@@ -182,12 +182,13 @@ refer to the applicable agreement for further details.
 		(line (pt 98 12)(pt 94 8))
 	)
 	(flipy)
+	(annotation_block (location)(rect 136 112 200 136))
 )
 (pin
 	(output)
 	(rect -48 312 128 328)
 	(text "OUTPUT" (rect 137 0 175 10)(font "Arial" (font_size 6)))
-	(text "ledsB[3..0]" (rect 5 0 56 17)(font "Intel Clear" ))
+	(text "ledsB[3..0]" (rect 5 0 55 17)(font "Intel Clear" ))
 	(pt 176 8)
 	(drawing
 		(line (pt 176 8)(pt 124 8))
@@ -199,6 +200,7 @@ refer to the applicable agreement for further details.
 		(line (pt 98 12)(pt 94 8))
 	)
 	(flipy)
+	(annotation_block (location)(rect 128 328 192 352))
 )
 (symbol
 	(rect 776 56 904 152)
@@ -1939,3 +1941,7 @@ refer to the applicable agreement for further details.
 (junction (pt 184 272))
 (junction (pt 152 40))
 (junction (pt 152 256))
+(text "TEAM14_LABORATORIO6_MULTIPLIER" (rect 1112 -48 1619 -15)(font "Intel Clear" (color 0 0 255)(font_size 18)))
+(text "ALONSO EMMANUEL LOPEZ MACIAS" (rect 1120 -16 1599 17)(font "Intel Clear" (color 255 85 0)(font_size 18)))
+(text "CESAR EDUARDO INDA CENICEROS" (rect 1112 24 1572 57)(font "Intel Clear" (color 255 85 0)(font_size 18)))
+(rectangle (rect 1096 -48 1552 64))
