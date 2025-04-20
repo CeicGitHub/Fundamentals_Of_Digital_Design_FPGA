@@ -1,0 +1,185 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "P0[3]",
+					"strict" : false
+				},
+				{
+					"name" : "P0[2]",
+					"strict" : false
+				},
+				{
+					"name" : "P0[1]",
+					"strict" : false
+				},
+				{
+					"name" : "P0[0]",
+					"strict" : false
+				},
+				{
+					"name" : "P1[4]",
+					"strict" : false
+				},
+				{
+					"name" : "P1[3]",
+					"strict" : false
+				},
+				{
+					"name" : "P1[2]",
+					"strict" : false
+				},
+				{
+					"name" : "P1[1]",
+					"strict" : false
+				},
+				{
+					"name" : "P2[5]",
+					"strict" : false
+				},
+				{
+					"name" : "P2[4]",
+					"strict" : false
+				},
+				{
+					"name" : "P2[3]",
+					"strict" : false
+				},
+				{
+					"name" : "P2[2]",
+					"strict" : false
+				},
+				{
+					"name" : "P3[6]",
+					"strict" : false
+				},
+				{
+					"name" : "P3[5]",
+					"strict" : false
+				},
+				{
+					"name" : "P3[4]",
+					"strict" : false
+				},
+				{
+					"name" : "P3[3]",
+					"strict" : false
+				},
+				{
+					"name" : "sum1[5]",
+					"strict" : false
+				},
+				{
+					"name" : "sum1[4]",
+					"strict" : false
+				},
+				{
+					"name" : "sum1[3]",
+					"strict" : false
+				},
+				{
+					"name" : "sum1[2]",
+					"strict" : false
+				},
+				{
+					"name" : "sum1[1]",
+					"strict" : false
+				},
+				{
+					"name" : "sum1[0]",
+					"strict" : false
+				},
+				{
+					"name" : "sum2[7]",
+					"strict" : false
+				},
+				{
+					"name" : "sum2[6]",
+					"strict" : false
+				},
+				{
+					"name" : "sum2[5]",
+					"strict" : false
+				},
+				{
+					"name" : "sum2[4]",
+					"strict" : false
+				},
+				{
+					"name" : "sum2[3]",
+					"strict" : false
+				},
+				{
+					"name" : "sum2[2]",
+					"strict" : false
+				},
+				{
+					"name" : "sumtotal[7]",
+					"strict" : false
+				},
+				{
+					"name" : "sumtotal[6]",
+					"strict" : false
+				},
+				{
+					"name" : "sumtotal[5]",
+					"strict" : false
+				},
+				{
+					"name" : "sumtotal[4]",
+					"strict" : false
+				},
+				{
+					"name" : "sumtotal[3]",
+					"strict" : false
+				},
+				{
+					"name" : "sumtotal[2]",
+					"strict" : false
+				},
+				{
+					"name" : "sumtotal[1]",
+					"strict" : false
+				},
+				{
+					"name" : "sumtotal[0]",
+					"strict" : false
+				},
+				{
+					"name" : "A[3]",
+					"strict" : false
+				},
+				{
+					"name" : "B[0]",
+					"strict" : false
+				},
+				{
+					"name" : "A[2]",
+					"strict" : false
+				},
+				{
+					"name" : "A[1]",
+					"strict" : false
+				},
+				{
+					"name" : "A[0]",
+					"strict" : false
+				},
+				{
+					"name" : "B[1]",
+					"strict" : false
+				},
+				{
+					"name" : "B[2]",
+					"strict" : false
+				},
+				{
+					"name" : "B[3]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
