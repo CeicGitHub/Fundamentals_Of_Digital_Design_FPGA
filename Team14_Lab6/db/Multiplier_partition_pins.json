@@ -4,6 +4,38 @@
 			"name" : "Top",
 			"pins" : [
 				{
+					"name" : "ledsA[3]",
+					"strict" : false
+				},
+				{
+					"name" : "ledsA[2]",
+					"strict" : false
+				},
+				{
+					"name" : "ledsA[1]",
+					"strict" : false
+				},
+				{
+					"name" : "ledsA[0]",
+					"strict" : false
+				},
+				{
+					"name" : "ledsB[3]",
+					"strict" : false
+				},
+				{
+					"name" : "ledsB[2]",
+					"strict" : false
+				},
+				{
+					"name" : "ledsB[1]",
+					"strict" : false
+				},
+				{
+					"name" : "ledsB[0]",
+					"strict" : false
+				},
+				{
 					"name" : "P0[3]",
 					"strict" : false
 				},
@@ -152,10 +184,6 @@
 					"strict" : false
 				},
 				{
-					"name" : "B[0]",
-					"strict" : false
-				},
-				{
 					"name" : "A[2]",
 					"strict" : false
 				},
@@ -168,7 +196,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "B[1]",
+					"name" : "B[3]",
 					"strict" : false
 				},
 				{
@@ -176,7 +204,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "B[3]",
+					"name" : "B[1]",
+					"strict" : false
+				},
+				{
+					"name" : "B[0]",
 					"strict" : false
 				}
 			]

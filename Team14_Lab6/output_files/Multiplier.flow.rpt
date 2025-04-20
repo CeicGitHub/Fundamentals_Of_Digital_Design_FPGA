@@ -1,5 +1,5 @@
 Flow report for Multiplier
-Sat Apr 19 11:28:11 2025
+Sat Apr 19 21:02:46 2025
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,7 +40,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Sat Apr 19 11:28:08 2025       ;
+; Flow Status                        ; Successful - Sat Apr 19 21:02:43 2025       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; Multiplier                                  ;
 ; Top-level Entity Name              ; Multiplier                                  ;
@@ -51,7 +51,7 @@ refer to the applicable agreement for further details.
 ;     Total combinational functions  ; 44 / 114,480 ( < 1 % )                      ;
 ;     Dedicated logic registers      ; 0 / 114,480 ( 0 % )                         ;
 ; Total registers                    ; 0                                           ;
-; Total pins                         ; 64 / 529 ( 12 % )                           ;
+; Total pins                         ; 72 / 529 ( 14 % )                           ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0 / 3,981,312 ( 0 % )                       ;
 ; Embedded Multiplier 9-bit elements ; 0 / 532 ( 0 % )                             ;
@@ -64,7 +64,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 04/19/2025 11:27:45 ;
+; Start date & time ; 04/19/2025 21:02:17 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Multiplier          ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 273184157047325.174508726403632        ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 273184157047325.174512173709392        ; --            ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --         ;
 ; NOMINAL_CORE_SUPPLY_VOLTAGE         ; 1.2V                                   ; --            ; --          ; --         ;
@@ -91,11 +91,11 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:10     ; 1.0                     ; 4766 MB             ; 00:00:22                           ;
-; Fitter               ; 00:00:09     ; 1.0                     ; 5816 MB             ; 00:00:16                           ;
-; Assembler            ; 00:00:02     ; 1.0                     ; 4682 MB             ; 00:00:03                           ;
+; Analysis & Synthesis ; 00:00:10     ; 1.0                     ; 4765 MB             ; 00:00:22                           ;
+; Fitter               ; 00:00:11     ; 1.0                     ; 5818 MB             ; 00:00:22                           ;
+; Assembler            ; 00:00:03     ; 1.0                     ; 4681 MB             ; 00:00:03                           ;
 ; Timing Analyzer      ; 00:00:02     ; 1.0                     ; 4861 MB             ; 00:00:02                           ;
-; Total                ; 00:00:23     ; --                      ; --                  ; 00:00:43                           ;
+; Total                ; 00:00:26     ; --                      ; --                  ; 00:00:49                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

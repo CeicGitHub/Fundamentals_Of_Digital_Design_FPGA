@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Multiplier
-Sat Apr 19 11:27:54 2025
+Sat Apr 19 21:02:27 2025
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -42,7 +42,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat Apr 19 11:27:54 2025       ;
+; Analysis & Synthesis Status        ; Successful - Sat Apr 19 21:02:27 2025       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; Multiplier                                  ;
 ; Top-level Entity Name              ; Multiplier                                  ;
@@ -51,7 +51,7 @@ refer to the applicable agreement for further details.
 ;     Total combinational functions  ; 44                                          ;
 ;     Dedicated logic registers      ; 0                                           ;
 ; Total registers                    ; 0                                           ;
-; Total pins                         ; 64                                          ;
+; Total pins                         ; 72                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -193,14 +193,14 @@ refer to the applicable agreement for further details.
 ;     -- Dedicated logic registers            ; 0          ;
 ;     -- I/O registers                        ; 0          ;
 ;                                             ;            ;
-; I/O pins                                    ; 64         ;
+; I/O pins                                    ; 72         ;
 ;                                             ;            ;
 ; Embedded Multiplier 9-bit elements          ; 0          ;
 ;                                             ;            ;
 ; Maximum fan-out node                        ; B[3]~input ;
-; Maximum fan-out                             ; 14         ;
-; Total fan-out                               ; 234        ;
-; Average fan-out                             ; 1.36       ;
+; Maximum fan-out                             ; 15         ;
+; Total fan-out                               ; 250        ;
+; Average fan-out                             ; 1.33       ;
 +---------------------------------------------+------------+
 
 
@@ -209,7 +209,7 @@ refer to the applicable agreement for further details.
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                            ; Entity Name ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------+-------------+--------------+
-; |Multiplier                ; 44 (16)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 64   ; 0            ; |Multiplier                                    ; Multiplier  ; work         ;
+; |Multiplier                ; 44 (16)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 72   ; 0            ; |Multiplier                                    ; Multiplier  ; work         ;
 ;    |8bit_adder:inst10|     ; 10 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Multiplier|8bit_adder:inst10                  ; 8bit_adder  ; work         ;
 ;       |1bit_adder:inst3|   ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Multiplier|8bit_adder:inst10|1bit_adder:inst3 ; 1bit_adder  ; work         ;
 ;       |1bit_adder:inst4|   ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Multiplier|8bit_adder:inst10|1bit_adder:inst4 ; 1bit_adder  ; work         ;
@@ -251,7 +251,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 64                          ;
+; boundary_port         ; 72                          ;
 ; cycloneiii_lcell_comb ; 45                          ;
 ;     normal            ; 45                          ;
 ;         0 data inputs ; 1                           ;
@@ -279,7 +279,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Sat Apr 19 11:27:44 2025
+    Info: Processing started: Sat Apr 19 21:02:17 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Multiplier -c Multiplier
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
@@ -320,13 +320,13 @@ Warning (13024): Output pins are stuck at VCC or GND
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 108 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 116 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 8 input pins
-    Info (21059): Implemented 56 output pins
+    Info (21059): Implemented 64 output pins
     Info (21061): Implemented 44 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 22 warnings
-    Info: Peak virtual memory: 4766 megabytes
-    Info: Processing ended: Sat Apr 19 11:27:54 2025
+    Info: Peak virtual memory: 4765 megabytes
+    Info: Processing ended: Sat Apr 19 21:02:27 2025
     Info: Elapsed time: 00:00:10
     Info: Total CPU time (on all processors): 00:00:22
 
