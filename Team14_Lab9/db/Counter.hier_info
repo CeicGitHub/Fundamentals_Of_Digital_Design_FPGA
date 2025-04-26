@@ -1,0 +1,6 @@
+|Counter
+clock => ~NO_FANOUT~
+enable => ~NO_FANOUT~
+arstn => ~NO_FANOUT~
+
+
