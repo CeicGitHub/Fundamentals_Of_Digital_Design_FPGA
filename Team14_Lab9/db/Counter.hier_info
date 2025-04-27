@@ -1,6 +1,35 @@
 |Counter
-clock => ~NO_FANOUT~
-enable => ~NO_FANOUT~
-arstn => ~NO_FANOUT~
+count[0] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+count[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+count[2] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+count[3] <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+count[4] <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+count[5] <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+count[6] <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+count[7] <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+arstn => inst1.ACLR
+arstn => inst2.ACLR
+arstn => inst3.ACLR
+arstn => inst4.ACLR
+arstn => inst5.ACLR
+arstn => inst6.ACLR
+arstn => inst7.ACLR
+arstn => inst8.ACLR
+clock => inst1.CLK
+clock => inst2.CLK
+clock => inst3.CLK
+clock => inst4.CLK
+clock => inst5.CLK
+clock => inst6.CLK
+clock => inst7.CLK
+clock => inst8.CLK
+enable => inst1.ENA
+enable => inst2.ENA
+enable => inst3.ENA
+enable => inst4.ENA
+enable => inst5.ENA
+enable => inst6.ENA
+enable => inst7.ENA
+enable => inst8.ENA
 
 
