@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Counter
-Sat Apr 26 22:51:40 2025
+Mon Apr 28 14:09:23 2025
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -14,9 +14,14 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
-  9. Post-Synthesis Netlist Statistics for Top Partition
- 10. Elapsed Time Per Partition
- 11. Analysis & Synthesis Messages
+  9. Parameter Settings for User Entity Instance: LPM_MUX:inst30
+ 10. Parameter Settings for User Entity Instance: LPM_CONSTANT:inst32
+ 11. Parameter Settings for User Entity Instance: LPM_ADD_SUB:inst19
+ 12. Parameter Settings for User Entity Instance: LPM_CONSTANT:inst12
+ 13. Parameter Settings for User Entity Instance: LPM_COMPARE:inst20
+ 14. Post-Synthesis Netlist Statistics for Top Partition
+ 15. Elapsed Time Per Partition
+ 16. Analysis & Synthesis Messages
 
 
 
@@ -42,16 +47,16 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat Apr 26 22:51:40 2025       ;
+; Analysis & Synthesis Status        ; Successful - Mon Apr 28 14:09:23 2025       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; Counter                                     ;
 ; Top-level Entity Name              ; Counter                                     ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 10                                          ;
-;     Total combinational functions  ; 10                                          ;
+; Total logic elements               ; 21                                          ;
+;     Total combinational functions  ; 21                                          ;
 ;     Dedicated logic registers      ; 8                                           ;
 ; Total registers                    ; 8                                           ;
-; Total pins                         ; 11                                          ;
+; Total pins                         ; 27                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -162,54 +167,75 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                      ;
-+----------------------------------+-----------------+------------------------------------+-----------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path            ; Library ;
-+----------------------------------+-----------------+------------------------------------+-----------------------------------------+---------+
-; Counter.bdf                      ; yes             ; User Block Diagram/Schematic File  ; D:/Quartus_Labs/Team14_Lab9/Counter.bdf ;         ;
-+----------------------------------+-----------------+------------------------------------+-----------------------------------------+---------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                             ;
++----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                   ; Library ;
++----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------------+---------+
+; Counter.bdf                      ; yes             ; User Block Diagram/Schematic File  ; D:/Quartus_Labs/Lab009/Counter.bdf                                             ;         ;
+; lpm_mux.tdf                      ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_mux.tdf             ;         ;
+; aglobal181.inc                   ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/aglobal181.inc          ;         ;
+; muxlut.inc                       ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/muxlut.inc              ;         ;
+; bypassff.inc                     ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/bypassff.inc            ;         ;
+; altshift.inc                     ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altshift.inc            ;         ;
+; db/mux_p7e.tdf                   ; yes             ; Auto-Generated Megafunction        ; D:/Quartus_Labs/Lab009/db/mux_p7e.tdf                                          ;         ;
+; lpm_constant.tdf                 ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_constant.tdf        ;         ;
+; lpm_add_sub.tdf                  ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_add_sub.tdf         ;         ;
+; addcore.inc                      ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/addcore.inc             ;         ;
+; look_add.inc                     ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/look_add.inc            ;         ;
+; alt_stratix_add_sub.inc          ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/alt_stratix_add_sub.inc ;         ;
+; db/add_sub_t8j.tdf               ; yes             ; Auto-Generated Megafunction        ; D:/Quartus_Labs/Lab009/db/add_sub_t8j.tdf                                      ;         ;
+; lpm_compare.tdf                  ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_compare.tdf         ;         ;
+; comptree.inc                     ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/comptree.inc            ;         ;
+; db/cmpr_a2i.tdf                  ; yes             ; Auto-Generated Megafunction        ; D:/Quartus_Labs/Lab009/db/cmpr_a2i.tdf                                         ;         ;
++----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------------+---------+
 
 
-+-----------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary               ;
-+---------------------------------------------+-------------+
-; Resource                                    ; Usage       ;
-+---------------------------------------------+-------------+
-; Estimated Total logic elements              ; 10          ;
-;                                             ;             ;
-; Total combinational functions               ; 10          ;
-; Logic element usage by number of LUT inputs ;             ;
-;     -- 4 input functions                    ; 4           ;
-;     -- 3 input functions                    ; 2           ;
-;     -- <=2 input functions                  ; 4           ;
-;                                             ;             ;
-; Logic elements by mode                      ;             ;
-;     -- normal mode                          ; 10          ;
-;     -- arithmetic mode                      ; 0           ;
-;                                             ;             ;
-; Total registers                             ; 8           ;
-;     -- Dedicated logic registers            ; 8           ;
-;     -- I/O registers                        ; 0           ;
-;                                             ;             ;
-; I/O pins                                    ; 11          ;
-;                                             ;             ;
-; Embedded Multiplier 9-bit elements          ; 0           ;
-;                                             ;             ;
-; Maximum fan-out node                        ; clock~input ;
-; Maximum fan-out                             ; 8           ;
-; Total fan-out                               ; 80          ;
-; Average fan-out                             ; 2.00        ;
-+---------------------------------------------+-------------+
++----------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                                                                    ;
++---------------------------------------------+------------------------------------------------------------------+
+; Resource                                    ; Usage                                                            ;
++---------------------------------------------+------------------------------------------------------------------+
+; Estimated Total logic elements              ; 21                                                               ;
+;                                             ;                                                                  ;
+; Total combinational functions               ; 21                                                               ;
+; Logic element usage by number of LUT inputs ;                                                                  ;
+;     -- 4 input functions                    ; 5                                                                ;
+;     -- 3 input functions                    ; 0                                                                ;
+;     -- <=2 input functions                  ; 16                                                               ;
+;                                             ;                                                                  ;
+; Logic elements by mode                      ;                                                                  ;
+;     -- normal mode                          ; 14                                                               ;
+;     -- arithmetic mode                      ; 7                                                                ;
+;                                             ;                                                                  ;
+; Total registers                             ; 8                                                                ;
+;     -- Dedicated logic registers            ; 8                                                                ;
+;     -- I/O registers                        ; 0                                                                ;
+;                                             ;                                                                  ;
+; I/O pins                                    ; 27                                                               ;
+;                                             ;                                                                  ;
+; Embedded Multiplier 9-bit elements          ; 0                                                                ;
+;                                             ;                                                                  ;
+; Maximum fan-out node                        ; lpm_compare:inst20|cmpr_a2i:auto_generated|aneb_result_wire[0]~4 ;
+; Maximum fan-out                             ; 8                                                                ;
+; Total fan-out                               ; 126                                                              ;
+; Average fan-out                             ; 1.52                                                             ;
++---------------------------------------------+------------------------------------------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                      ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
-; |Counter                   ; 10 (10)             ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 11   ; 0            ; |Counter            ; Counter     ; work         ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                 ;
++------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------+-------------+--------------+
+; Compilation Hierarchy Node         ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                    ; Entity Name ; Library Name ;
++------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------+-------------+--------------+
+; |Counter                           ; 21 (0)              ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 27   ; 0            ; |Counter                                               ; Counter     ; work         ;
+;    |lpm_add_sub:inst19|            ; 8 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Counter|lpm_add_sub:inst19                            ; lpm_add_sub ; work         ;
+;       |add_sub_t8j:auto_generated| ; 8 (8)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Counter|lpm_add_sub:inst19|add_sub_t8j:auto_generated ; add_sub_t8j ; work         ;
+;    |lpm_compare:inst20|            ; 5 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Counter|lpm_compare:inst20                            ; lpm_compare ; work         ;
+;       |cmpr_a2i:auto_generated|    ; 5 (5)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Counter|lpm_compare:inst20|cmpr_a2i:auto_generated    ; cmpr_a2i    ; work         ;
+;    |lpm_mux:inst30|                ; 8 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Counter|lpm_mux:inst30                                ; lpm_mux     ; work         ;
+;       |mux_p7e:auto_generated|     ; 8 (8)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Counter|lpm_mux:inst30|mux_p7e:auto_generated         ; mux_p7e     ; work         ;
++------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -228,23 +254,121 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 
 
++-------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: LPM_MUX:inst30 ;
++------------------------+--------------+---------------------+
+; Parameter Name         ; Value        ; Type                ;
++------------------------+--------------+---------------------+
+; AUTO_CARRY_CHAINS      ; ON           ; AUTO_CARRY          ;
+; IGNORE_CARRY_BUFFERS   ; OFF          ; IGNORE_CARRY        ;
+; AUTO_CASCADE_CHAINS    ; ON           ; AUTO_CASCADE        ;
+; IGNORE_CASCADE_BUFFERS ; OFF          ; IGNORE_CASCADE      ;
+; LPM_WIDTH              ; 8            ; Untyped             ;
+; LPM_SIZE               ; 2            ; Untyped             ;
+; LPM_WIDTHS             ; 1            ; Untyped             ;
+; LPM_PIPELINE           ; 0            ; Untyped             ;
+; CBXI_PARAMETER         ; mux_p7e      ; Untyped             ;
+; DEVICE_FAMILY          ; Cyclone IV E ; Untyped             ;
++------------------------+--------------+---------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: LPM_CONSTANT:inst32 ;
++--------------------+------------------+--------------------------+
+; Parameter Name     ; Value            ; Type                     ;
++--------------------+------------------+--------------------------+
+; LPM_WIDTH          ; 8                ; Untyped                  ;
+; LPM_CVALUE         ; 0                ; Untyped                  ;
+; ENABLE_RUNTIME_MOD ; NO               ; Untyped                  ;
+; CBXI_PARAMETER     ; lpm_constant_j84 ; Untyped                  ;
++--------------------+------------------+--------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: LPM_ADD_SUB:inst19 ;
++------------------------+--------------+-------------------------+
+; Parameter Name         ; Value        ; Type                    ;
++------------------------+--------------+-------------------------+
+; LPM_WIDTH              ; 8            ; Untyped                 ;
+; LPM_REPRESENTATION     ; UNSIGNED     ; Untyped                 ;
+; LPM_DIRECTION          ; ADD          ; Untyped                 ;
+; ONE_INPUT_IS_CONSTANT  ; YES          ; Untyped                 ;
+; LPM_PIPELINE           ; 0            ; Untyped                 ;
+; MAXIMIZE_SPEED         ; 5            ; Untyped                 ;
+; REGISTERED_AT_END      ; 0            ; Untyped                 ;
+; OPTIMIZE_FOR_SPEED     ; 5            ; Untyped                 ;
+; USE_CS_BUFFERS         ; 1            ; Untyped                 ;
+; CARRY_CHAIN            ; MANUAL       ; Untyped                 ;
+; CARRY_CHAIN_LENGTH     ; 48           ; CARRY_CHAIN_LENGTH      ;
+; DEVICE_FAMILY          ; Cyclone IV E ; Untyped                 ;
+; USE_WYS                ; OFF          ; Untyped                 ;
+; STYLE                  ; FAST         ; Untyped                 ;
+; CBXI_PARAMETER         ; add_sub_t8j  ; Untyped                 ;
+; AUTO_CARRY_CHAINS      ; ON           ; AUTO_CARRY              ;
+; IGNORE_CARRY_BUFFERS   ; OFF          ; IGNORE_CARRY            ;
+; AUTO_CASCADE_CHAINS    ; ON           ; AUTO_CASCADE            ;
+; IGNORE_CASCADE_BUFFERS ; OFF          ; IGNORE_CASCADE          ;
++------------------------+--------------+-------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: LPM_CONSTANT:inst12 ;
++--------------------+------------------+--------------------------+
+; Parameter Name     ; Value            ; Type                     ;
++--------------------+------------------+--------------------------+
+; LPM_WIDTH          ; 8                ; Untyped                  ;
+; LPM_CVALUE         ; 1                ; Untyped                  ;
+; ENABLE_RUNTIME_MOD ; NO               ; Untyped                  ;
+; CBXI_PARAMETER     ; lpm_constant_k84 ; Untyped                  ;
++--------------------+------------------+--------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: LPM_COMPARE:inst20 ;
++------------------------+--------------+-------------------------+
+; Parameter Name         ; Value        ; Type                    ;
++------------------------+--------------+-------------------------+
+; lpm_width              ; 8            ; Untyped                 ;
+; LPM_REPRESENTATION     ; UNSIGNED     ; Untyped                 ;
+; LPM_PIPELINE           ; 0            ; Untyped                 ;
+; CHAIN_SIZE             ; 8            ; Untyped                 ;
+; ONE_INPUT_IS_CONSTANT  ; NO           ; Untyped                 ;
+; CARRY_CHAIN            ; MANUAL       ; Untyped                 ;
+; CASCADE_CHAIN          ; MANUAL       ; Untyped                 ;
+; CARRY_CHAIN_LENGTH     ; 48           ; CARRY_CHAIN_LENGTH      ;
+; CASCADE_CHAIN_LENGTH   ; 2            ; CASCADE_CHAIN_LENGTH    ;
+; DEVICE_FAMILY          ; Cyclone IV E ; Untyped                 ;
+; CBXI_PARAMETER         ; cmpr_a2i     ; Untyped                 ;
+; AUTO_CARRY_CHAINS      ; ON           ; AUTO_CARRY              ;
+; IGNORE_CARRY_BUFFERS   ; OFF          ; IGNORE_CARRY            ;
+; AUTO_CASCADE_CHAINS    ; ON           ; AUTO_CASCADE            ;
+; IGNORE_CASCADE_BUFFERS ; OFF          ; IGNORE_CASCADE          ;
++------------------------+--------------+-------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +-----------------------------------------------------+
 ; Post-Synthesis Netlist Statistics for Top Partition ;
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 11                          ;
+; boundary_port         ; 27                          ;
 ; cycloneiii_ff         ; 8                           ;
 ;     ENA CLR           ; 8                           ;
-; cycloneiii_lcell_comb ; 10                          ;
-;     normal            ; 10                          ;
+; cycloneiii_lcell_comb ; 21                          ;
+;     arith             ; 7                           ;
+;         2 data inputs ; 7                           ;
+;     normal            ; 14                          ;
 ;         1 data inputs ; 1                           ;
-;         2 data inputs ; 3                           ;
-;         3 data inputs ; 2                           ;
-;         4 data inputs ; 4                           ;
+;         2 data inputs ; 8                           ;
+;         4 data inputs ; 5                           ;
 ;                       ;                             ;
-; Max LUT depth         ; 2.00                        ;
-; Average LUT depth     ; 1.43                        ;
+; Max LUT depth         ; 3.00                        ;
+; Average LUT depth     ; 2.65                        ;
 +-----------------------+-----------------------------+
 
 
@@ -253,7 +377,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:01     ;
+; Top            ; 00:00:00     ;
 +----------------+--------------+
 
 
@@ -263,24 +387,64 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Sat Apr 26 22:51:12 2025
+    Info: Processing started: Mon Apr 28 14:09:11 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Counter -c Counter
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file counter.bdf
     Info (12023): Found entity 1: Counter
 Info (12127): Elaborating entity "Counter" for the top level hierarchy
+Info (12128): Elaborating entity "LPM_MUX" for hierarchy "LPM_MUX:inst30"
+Info (12130): Elaborated megafunction instantiation "LPM_MUX:inst30"
+Info (12133): Instantiated megafunction "LPM_MUX:inst30" with the following parameter:
+    Info (12134): Parameter "LPM_PIPELINE" = "0"
+    Info (12134): Parameter "LPM_SIZE" = "2"
+    Info (12134): Parameter "LPM_WIDTH" = "8"
+    Info (12134): Parameter "LPM_WIDTHS" = "1"
+Info (12021): Found 1 design units, including 1 entities, in source file db/mux_p7e.tdf
+    Info (12023): Found entity 1: mux_p7e File: D:/Quartus_Labs/Lab009/db/mux_p7e.tdf Line: 22
+Info (12128): Elaborating entity "mux_p7e" for hierarchy "LPM_MUX:inst30|mux_p7e:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_mux.tdf Line: 86
+Info (12128): Elaborating entity "LPM_CONSTANT" for hierarchy "LPM_CONSTANT:inst32"
+Info (12130): Elaborated megafunction instantiation "LPM_CONSTANT:inst32"
+Info (12133): Instantiated megafunction "LPM_CONSTANT:inst32" with the following parameter:
+    Info (12134): Parameter "LPM_CVALUE" = "0"
+    Info (12134): Parameter "LPM_WIDTH" = "8"
+Info (12128): Elaborating entity "LPM_ADD_SUB" for hierarchy "LPM_ADD_SUB:inst19"
+Info (12130): Elaborated megafunction instantiation "LPM_ADD_SUB:inst19"
+Info (12133): Instantiated megafunction "LPM_ADD_SUB:inst19" with the following parameter:
+    Info (12134): Parameter "LPM_DIRECTION" = "ADD"
+    Info (12134): Parameter "LPM_PIPELINE" = "0"
+    Info (12134): Parameter "LPM_REPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_WIDTH" = "8"
+    Info (12134): Parameter "ONE_INPUT_IS_CONSTANT" = "YES"
+Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_t8j.tdf
+    Info (12023): Found entity 1: add_sub_t8j File: D:/Quartus_Labs/Lab009/db/add_sub_t8j.tdf Line: 22
+Info (12128): Elaborating entity "add_sub_t8j" for hierarchy "LPM_ADD_SUB:inst19|add_sub_t8j:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_add_sub.tdf Line: 118
+Info (12128): Elaborating entity "LPM_CONSTANT" for hierarchy "LPM_CONSTANT:inst12"
+Info (12130): Elaborated megafunction instantiation "LPM_CONSTANT:inst12"
+Info (12133): Instantiated megafunction "LPM_CONSTANT:inst12" with the following parameter:
+    Info (12134): Parameter "LPM_CVALUE" = "1"
+    Info (12134): Parameter "LPM_WIDTH" = "8"
+Info (12128): Elaborating entity "LPM_COMPARE" for hierarchy "LPM_COMPARE:inst20"
+Info (12130): Elaborated megafunction instantiation "LPM_COMPARE:inst20"
+Info (12133): Instantiated megafunction "LPM_COMPARE:inst20" with the following parameter:
+    Info (12134): Parameter "LPM_PIPELINE" = "0"
+    Info (12134): Parameter "LPM_REPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_WIDTH" = "8"
+Info (12021): Found 1 design units, including 1 entities, in source file db/cmpr_a2i.tdf
+    Info (12023): Found entity 1: cmpr_a2i File: D:/Quartus_Labs/Lab009/db/cmpr_a2i.tdf Line: 22
+Info (12128): Elaborating entity "cmpr_a2i" for hierarchy "LPM_COMPARE:inst20|cmpr_a2i:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_compare.tdf Line: 280
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 21 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 3 input pins
-    Info (21059): Implemented 8 output pins
-    Info (21061): Implemented 10 logic cells
+Info (21057): Implemented 48 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 11 input pins
+    Info (21059): Implemented 16 output pins
+    Info (21061): Implemented 21 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4784 megabytes
-    Info: Processing ended: Sat Apr 26 22:51:40 2025
-    Info: Elapsed time: 00:00:28
-    Info: Total CPU time (on all processors): 00:01:00
+    Info: Peak virtual memory: 4791 megabytes
+    Info: Processing ended: Mon Apr 28 14:09:23 2025
+    Info: Elapsed time: 00:00:12
+    Info: Total CPU time (on all processors): 00:00:24
 
 

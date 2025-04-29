@@ -4,35 +4,99 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "count[7]",
+					"name" : "cnt[7]",
 					"strict" : false
 				},
 				{
-					"name" : "count[6]",
+					"name" : "cnt[6]",
 					"strict" : false
 				},
 				{
-					"name" : "count[5]",
+					"name" : "cnt[5]",
 					"strict" : false
 				},
 				{
-					"name" : "count[4]",
+					"name" : "cnt[4]",
 					"strict" : false
 				},
 				{
-					"name" : "count[3]",
+					"name" : "cnt[3]",
 					"strict" : false
 				},
 				{
-					"name" : "count[2]",
+					"name" : "cnt[2]",
 					"strict" : false
 				},
 				{
-					"name" : "count[1]",
+					"name" : "cnt[1]",
 					"strict" : false
 				},
 				{
-					"name" : "count[0]",
+					"name" : "cnt[0]",
+					"strict" : false
+				},
+				{
+					"name" : "cnt_plus_one[7]",
+					"strict" : false
+				},
+				{
+					"name" : "cnt_plus_one[6]",
+					"strict" : false
+				},
+				{
+					"name" : "cnt_plus_one[5]",
+					"strict" : false
+				},
+				{
+					"name" : "cnt_plus_one[4]",
+					"strict" : false
+				},
+				{
+					"name" : "cnt_plus_one[3]",
+					"strict" : false
+				},
+				{
+					"name" : "cnt_plus_one[2]",
+					"strict" : false
+				},
+				{
+					"name" : "cnt_plus_one[1]",
+					"strict" : false
+				},
+				{
+					"name" : "cnt_plus_one[0]",
+					"strict" : false
+				},
+				{
+					"name" : "preset[7]",
+					"strict" : false
+				},
+				{
+					"name" : "preset[6]",
+					"strict" : false
+				},
+				{
+					"name" : "preset[5]",
+					"strict" : false
+				},
+				{
+					"name" : "preset[4]",
+					"strict" : false
+				},
+				{
+					"name" : "preset[3]",
+					"strict" : false
+				},
+				{
+					"name" : "preset[2]",
+					"strict" : false
+				},
+				{
+					"name" : "preset[1]",
+					"strict" : false
+				},
+				{
+					"name" : "preset[0]",
 					"strict" : false
 				},
 				{
