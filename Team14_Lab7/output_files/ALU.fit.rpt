@@ -1,5 +1,5 @@
 Fitter report for ALU
-Tue Apr 29 15:24:43 2025
+Thu May 01 00:12:25 2025
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -62,7 +62,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Tue Apr 29 15:24:43 2025       ;
+; Fitter Status                      ; Successful - Thu May 01 00:12:25 2025       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; ALU                                         ;
 ; Top-level Entity Name              ; ALU                                         ;
@@ -196,7 +196,7 @@ refer to the applicable agreement for further details.
 +--------------+
 ; Pin-Out File ;
 +--------------+
-The pin-out file can be found in D:/Quartus_Labs/Team14_Lab7/output_files/ALU.pin.
+The pin-out file can be found in D:/Quartus_Labs/ProyectoNuevo_Lab7/output_files/ALU.pin.
 
 
 +----------------------------------------------------------------------+
@@ -210,9 +210,9 @@ The pin-out file can be found in D:/Quartus_Labs/Team14_Lab7/output_files/ALU.pi
 ;     -- Combinational with a register        ; 0                      ;
 ;                                             ;                        ;
 ; Logic element usage by number of LUT inputs ;                        ;
-;     -- 4 input functions                    ; 30                     ;
-;     -- 3 input functions                    ; 8                      ;
-;     -- <=2 input functions                  ; 4                      ;
+;     -- 4 input functions                    ; 28                     ;
+;     -- 3 input functions                    ; 11                     ;
+;     -- <=2 input functions                  ; 3                      ;
 ;     -- Register only                        ; 0                      ;
 ;                                             ;                        ;
 ; Logic elements by mode                      ;                        ;
@@ -242,11 +242,11 @@ The pin-out file can be found in D:/Quartus_Labs/Team14_Lab7/output_files/ALU.pi
 ; Oscillator blocks                           ; 0 / 1 ( 0 % )          ;
 ; Impedance control blocks                    ; 0 / 4 ( 0 % )          ;
 ; Average interconnect usage (total/H/V)      ; 0.0% / 0.0% / 0.1%     ;
-; Peak interconnect usage (total/H/V)         ; 0.4% / 0.3% / 0.7%     ;
+; Peak interconnect usage (total/H/V)         ; 0.6% / 0.5% / 0.8%     ;
 ; Maximum fan-out                             ; 15                     ;
 ; Highest non-global fan-out                  ; 15                     ;
-; Total fan-out                               ; 182                    ;
-; Average fan-out                             ; 2.02                   ;
+; Total fan-out                               ; 181                    ;
+; Average fan-out                             ; 2.01                   ;
 +---------------------------------------------+------------------------+
 *  Register count does not include registers inside RAM blocks or DSP blocks.
 
@@ -265,9 +265,9 @@ The pin-out file can be found in D:/Quartus_Labs/Team14_Lab7/output_files/ALU.pi
 ;     -- Combinational with a register        ; 0                     ; 0                              ;
 ;                                             ;                       ;                                ;
 ; Logic element usage by number of LUT inputs ;                       ;                                ;
-;     -- 4 input functions                    ; 30                    ; 0                              ;
-;     -- 3 input functions                    ; 8                     ; 0                              ;
-;     -- <=2 input functions                  ; 4                     ; 0                              ;
+;     -- 4 input functions                    ; 28                    ; 0                              ;
+;     -- 3 input functions                    ; 11                    ; 0                              ;
+;     -- <=2 input functions                  ; 3                     ; 0                              ;
 ;     -- Register only                        ; 0                     ; 0                              ;
 ;                                             ;                       ;                                ;
 ; Logic elements by mode                      ;                       ;                                ;
@@ -293,7 +293,7 @@ The pin-out file can be found in D:/Quartus_Labs/Team14_Lab7/output_files/ALU.pi
 ;     -- Registered Output Connections        ; 0                     ; 0                              ;
 ;                                             ;                       ;                                ;
 ; Internal Connections                        ;                       ;                                ;
-;     -- Total Connections                    ; 177                   ; 5                              ;
+;     -- Total Connections                    ; 176                   ; 5                              ;
 ;     -- Registered Connections               ; 0                     ; 0                              ;
 ;                                             ;                       ;                                ;
 ; External Connections                        ;                       ;                                ;
@@ -329,12 +329,12 @@ The pin-out file can be found in D:/Quartus_Labs/Team14_Lab7/output_files/ALU.pi
 ; A[0]   ; AA23  ; 5        ; 115          ; 10           ; 7            ; 8                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
 ; A[1]   ; AA22  ; 5        ; 115          ; 6            ; 14           ; 9                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
 ; A[2]   ; Y24   ; 5        ; 115          ; 13           ; 0            ; 8                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
-; A[3]   ; Y23   ; 5        ; 115          ; 14           ; 7            ; 7                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
+; A[3]   ; Y23   ; 5        ; 115          ; 14           ; 7            ; 6                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
 ; B[0]   ; AC24  ; 5        ; 115          ; 4            ; 14           ; 6                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
 ; B[1]   ; AB24  ; 5        ; 115          ; 5            ; 14           ; 10                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
 ; B[2]   ; AB23  ; 5        ; 115          ; 7            ; 14           ; 7                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
-; B[3]   ; AA24  ; 5        ; 115          ; 9            ; 21           ; 7                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
-; sel[0] ; AB28  ; 5        ; 115          ; 17           ; 0            ; 10                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
+; B[3]   ; AA24  ; 5        ; 115          ; 9            ; 21           ; 6                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
+; sel[0] ; AB28  ; 5        ; 115          ; 17           ; 0            ; 11                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
 ; sel[1] ; AC28  ; 5        ; 115          ; 14           ; 0            ; 15                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
 ; sel[2] ; AC27  ; 5        ; 115          ; 15           ; 7            ; 10                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
 +--------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+-----------+
@@ -349,10 +349,10 @@ The pin-out file can be found in D:/Quartus_Labs/Team14_Lab7/output_files/ALU.pi
 ; alu1     ; E22   ; 7        ; 111          ; 73           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
 ; alu2     ; E25   ; 7        ; 83           ; 73           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
 ; alu4     ; E24   ; 7        ; 85           ; 73           ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
-; carry    ; F21   ; 7        ; 107          ; 73           ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
-; negative ; F19   ; 7        ; 94           ; 73           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
-; overflow ; E19   ; 7        ; 94           ; 73           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
-; zero     ; G19   ; 7        ; 69           ; 73           ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
+; carry    ; G22   ; 7        ; 72           ; 73           ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
+; negative ; G20   ; 7        ; 74           ; 73           ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
+; overflow ; G21   ; 7        ; 74           ; 73           ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
+; zero     ; H21   ; 7        ; 72           ; 73           ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
 +----------+-------+----------+--------------+--------------+--------------+-----------------+------------------------+---------------+-----------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-----------------------------------+---------------------------+----------------------------+-----------------------------+----------------------+----------------------+---------------------+
 
 
@@ -748,7 +748,7 @@ The pin-out file can be found in D:/Quartus_Labs/Team14_Lab7/output_files/ALU.pi
 ; E16      ;            ; 7        ; VCCIO7                                                    ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; E17      ; 456        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; E18      ; 427        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; E19      ; 421        ; 7        ; overflow                                                  ; output ; 2.5 V        ;         ; Column I/O ; Y               ; no       ; Off          ;
+; E19      ; 421        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; E20      ;            ; 7        ; VCCIO7                                                    ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; E21      ; 407        ; 7        ; alu0                                                      ; output ; 2.5 V        ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; E22      ; 403        ; 7        ; alu1                                                      ; output ; 2.5 V        ;         ; Column I/O ; Y               ; no       ; Off          ;
@@ -776,9 +776,9 @@ The pin-out file can be found in D:/Quartus_Labs/Team14_Lab7/output_files/ALU.pi
 ; F16      ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; F17      ; 455        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; F18      ; 428        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; F19      ; 420        ; 7        ; negative                                                  ; output ; 2.5 V        ;         ; Column I/O ; Y               ; no       ; Off          ;
+; F19      ; 420        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; F20      ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; F21      ; 408        ; 7        ; carry                                                     ; output ; 2.5 V        ;         ; Column I/O ; Y               ; no       ; Off          ;
+; F21      ; 408        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; F22      ; 409        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
 ; F23      ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; F24      ; 396        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
@@ -804,10 +804,10 @@ The pin-out file can be found in D:/Quartus_Labs/Team14_Lab7/output_files/ALU.pi
 ; G16      ; 453        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; G17      ; 437        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
 ; G18      ; 452        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; G19      ; 451        ; 7        ; zero                                                      ; output ; 2.5 V        ;         ; Column I/O ; Y               ; no       ; Off          ;
-; G20      ; 444        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; G21      ; 445        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; G22      ; 449        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; G19      ; 451        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; G20      ; 444        ; 7        ; negative                                                  ; output ; 2.5 V        ;         ; Column I/O ; Y               ; no       ; Off          ;
+; G21      ; 445        ; 7        ; overflow                                                  ; output ; 2.5 V        ;         ; Column I/O ; Y               ; no       ; Off          ;
+; G22      ; 449        ; 7        ; carry                                                     ; output ; 2.5 V        ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; G23      ; 398        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; G24      ; 397        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; G25      ; 393        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
@@ -834,7 +834,7 @@ The pin-out file can be found in D:/Quartus_Labs/Team14_Lab7/output_files/ALU.pi
 ; H18      ;            ; 7        ; VCCIO7                                                    ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; H19      ; 446        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; H20      ;            ;          ; GNDA2                                                     ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; H21      ; 448        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; H21      ; 448        ; 7        ; zero                                                      ; output ; 2.5 V        ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; H22      ; 399        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; H23      ; 391        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; H24      ; 390        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
@@ -1202,8 +1202,8 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 ; sel[0]   ; Incomplete set of assignments ;
 ; sel[2]   ; Incomplete set of assignments ;
 ; B[0]     ; Incomplete set of assignments ;
-; A[3]     ; Incomplete set of assignments ;
 ; B[3]     ; Incomplete set of assignments ;
+; A[3]     ; Incomplete set of assignments ;
 ; B[2]     ; Incomplete set of assignments ;
 ; A[2]     ; Incomplete set of assignments ;
 +----------+-------------------------------+
@@ -1214,8 +1214,8 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 +------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+----------------------------------------------------------------+-----------------+--------------+
 ; Compilation Hierarchy Node         ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M9Ks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Full Hierarchy Name                                            ; Entity Name     ; Library Name ;
 +------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+----------------------------------------------------------------+-----------------+--------------+
-; |ALU                               ; 42 (1)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 19   ; 0            ; 42 (1)       ; 0 (0)             ; 0 (0)            ; |ALU                                                           ; ALU             ; work         ;
-;    |flags_alu:inst108|             ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; |ALU|flags_alu:inst108                                         ; flags_alu       ; work         ;
+; |ALU                               ; 42 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 19   ; 0            ; 42 (0)       ; 0 (0)             ; 0 (0)            ; |ALU                                                           ; ALU             ; work         ;
+;    |flags_alu:inst108|             ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; |ALU|flags_alu:inst108                                         ; flags_alu       ; work         ;
 ;    |lpm_add_sub:inst109|           ; 5 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 5 (0)        ; 0 (0)             ; 0 (0)            ; |ALU|lpm_add_sub:inst109                                       ; lpm_add_sub     ; work         ;
 ;       |add_sub_gsg:auto_generated| ; 5 (5)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 5 (5)        ; 0 (0)             ; 0 (0)            ; |ALU|lpm_add_sub:inst109|add_sub_gsg:auto_generated            ; add_sub_gsg     ; work         ;
 ;    |lpm_mux:inst107|               ; 32 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 32 (0)       ; 0 (0)             ; 0 (0)            ; |ALU|lpm_mux:inst107                                           ; lpm_mux         ; work         ;
@@ -1223,7 +1223,7 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 ;    |substract_4bits:inst101|       ; 3 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 3 (0)        ; 0 (0)             ; 0 (0)            ; |ALU|substract_4bits:inst101                                   ; substract_4bits ; work         ;
 ;       |4bit_adder:inst1|           ; 3 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 3 (0)        ; 0 (0)             ; 0 (0)            ; |ALU|substract_4bits:inst101|4bit_adder:inst1                  ; 4bit_adder      ; work         ;
 ;          |1bit_adder:inst1|        ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; |ALU|substract_4bits:inst101|4bit_adder:inst1|1bit_adder:inst1 ; 1bit_adder      ; work         ;
-;          |1bit_adder:inst3|        ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; |ALU|substract_4bits:inst101|4bit_adder:inst1|1bit_adder:inst3 ; 1bit_adder      ; work         ;
+;          |1bit_adder:inst2|        ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; |ALU|substract_4bits:inst101|4bit_adder:inst1|1bit_adder:inst2 ; 1bit_adder      ; work         ;
 +------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+----------------------------------------------------------------+-----------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -1241,15 +1241,15 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; alu1     ; Output   ; --            ; --            ; --                    ; --  ; --   ;
 ; alu2     ; Output   ; --            ; --            ; --                    ; --  ; --   ;
 ; alu4     ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; A[0]     ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
+; A[0]     ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
 ; A[1]     ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
 ; B[1]     ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
-; sel[1]   ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
-; sel[0]   ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
+; sel[1]   ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
+; sel[0]   ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
 ; sel[2]   ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
-; B[0]     ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
-; A[3]     ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
+; B[0]     ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
 ; B[3]     ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
+; A[3]     ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
 ; B[2]     ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
 ; A[2]     ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
 +----------+----------+---------------+---------------+-----------------------+-----+------+
@@ -1261,130 +1261,129 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Source Pin / Fanout                                                      ; Pad To Core Index ; Setting ;
 +--------------------------------------------------------------------------+-------------------+---------+
 ; A[0]                                                                     ;                   ;         ;
-;      - lpm_add_sub:inst109|add_sub_gsg:auto_generated|op_1~0             ; 1                 ; 6       ;
-;      - lpm_mux:inst107|mux_irc:auto_generated|result_node[1]~2           ; 1                 ; 6       ;
-;      - substract_4bits:inst101|4bit_adder:inst1|1bit_adder:inst1|inst1   ; 1                 ; 6       ;
-;      - lpm_mux:inst107|mux_irc:auto_generated|_~2                        ; 1                 ; 6       ;
-;      - substract_4bits:inst101|4bit_adder:inst1|1bit_adder:inst1|inst5~0 ; 1                 ; 6       ;
-;      - lpm_mux:inst107|mux_irc:auto_generated|_~3                        ; 1                 ; 6       ;
-;      - lpm_mux:inst107|mux_irc:auto_generated|result_node[0]~20          ; 1                 ; 6       ;
-;      - lpm_mux:inst107|mux_irc:auto_generated|result_node[0]~22          ; 1                 ; 6       ;
+;      - lpm_add_sub:inst109|add_sub_gsg:auto_generated|op_1~0             ; 0                 ; 6       ;
+;      - lpm_mux:inst107|mux_irc:auto_generated|result_node[1]~2           ; 0                 ; 6       ;
+;      - substract_4bits:inst101|4bit_adder:inst1|1bit_adder:inst1|inst1   ; 0                 ; 6       ;
+;      - substract_4bits:inst101|4bit_adder:inst1|1bit_adder:inst1|inst5~0 ; 0                 ; 6       ;
+;      - lpm_mux:inst107|mux_irc:auto_generated|result_node[3]~15          ; 0                 ; 6       ;
+;      - lpm_mux:inst107|mux_irc:auto_generated|_~0                        ; 0                 ; 6       ;
+;      - lpm_mux:inst107|mux_irc:auto_generated|result_node[0]~25          ; 0                 ; 6       ;
+;      - lpm_mux:inst107|mux_irc:auto_generated|result_node[0]~27          ; 0                 ; 6       ;
 ; A[1]                                                                     ;                   ;         ;
 ;      - lpm_add_sub:inst109|add_sub_gsg:auto_generated|op_1~2             ; 0                 ; 6       ;
 ;      - lpm_mux:inst107|mux_irc:auto_generated|result_node[1]~2           ; 0                 ; 6       ;
 ;      - substract_4bits:inst101|4bit_adder:inst1|1bit_adder:inst1|inst1   ; 0                 ; 6       ;
 ;      - lpm_mux:inst107|mux_irc:auto_generated|result_node[1]~7           ; 0                 ; 6       ;
-;      - lpm_mux:inst107|mux_irc:auto_generated|_~2                        ; 0                 ; 6       ;
 ;      - substract_4bits:inst101|4bit_adder:inst1|1bit_adder:inst1|inst5~0 ; 0                 ; 6       ;
-;      - lpm_mux:inst107|mux_irc:auto_generated|_~3                        ; 0                 ; 6       ;
-;      - lpm_mux:inst107|mux_irc:auto_generated|result_node[0]~22          ; 0                 ; 6       ;
-;      - lpm_mux:inst107|mux_irc:auto_generated|result_node[0]~24          ; 0                 ; 6       ;
+;      - lpm_mux:inst107|mux_irc:auto_generated|result_node[3]~15          ; 0                 ; 6       ;
+;      - lpm_mux:inst107|mux_irc:auto_generated|_~0                        ; 0                 ; 6       ;
+;      - lpm_mux:inst107|mux_irc:auto_generated|result_node[0]~27          ; 0                 ; 6       ;
+;      - lpm_mux:inst107|mux_irc:auto_generated|result_node[0]~29          ; 0                 ; 6       ;
 ; B[1]                                                                     ;                   ;         ;
 ;      - lpm_add_sub:inst109|add_sub_gsg:auto_generated|op_1~2             ; 0                 ; 6       ;
 ;      - lpm_mux:inst107|mux_irc:auto_generated|result_node[1]~2           ; 0                 ; 6       ;
 ;      - substract_4bits:inst101|4bit_adder:inst1|1bit_adder:inst1|inst1   ; 0                 ; 6       ;
 ;      - lpm_mux:inst107|mux_irc:auto_generated|result_node[1]~7           ; 0                 ; 6       ;
-;      - lpm_mux:inst107|mux_irc:auto_generated|_~1                        ; 0                 ; 6       ;
-;      - lpm_mux:inst107|mux_irc:auto_generated|_~2                        ; 0                 ; 6       ;
 ;      - substract_4bits:inst101|4bit_adder:inst1|1bit_adder:inst1|inst5~0 ; 0                 ; 6       ;
-;      - lpm_mux:inst107|mux_irc:auto_generated|_~3                        ; 0                 ; 6       ;
-;      - lpm_mux:inst107|mux_irc:auto_generated|result_node[0]~22          ; 0                 ; 6       ;
-;      - lpm_mux:inst107|mux_irc:auto_generated|result_node[0]~24          ; 0                 ; 6       ;
-; sel[1]                                                                   ;                   ;         ;
-;      - lpm_mux:inst107|mux_irc:auto_generated|result_node[1]~2           ; 1                 ; 6       ;
-;      - lpm_mux:inst107|mux_irc:auto_generated|result_node[3]~4           ; 1                 ; 6       ;
-;      - lpm_mux:inst107|mux_irc:auto_generated|result_node[1]~7           ; 1                 ; 6       ;
-;      - lpm_mux:inst107|mux_irc:auto_generated|result_node[3]~8           ; 1                 ; 6       ;
-;      - lpm_mux:inst107|mux_irc:auto_generated|result_node[3]~10          ; 1                 ; 6       ;
-;      - lpm_mux:inst107|mux_irc:auto_generated|result_node[3]~11          ; 1                 ; 6       ;
-;      - lpm_mux:inst107|mux_irc:auto_generated|_~0                        ; 1                 ; 6       ;
-;      - lpm_mux:inst107|mux_irc:auto_generated|_~1                        ; 1                 ; 6       ;
-;      - lpm_mux:inst107|mux_irc:auto_generated|result_node[3]~13          ; 1                 ; 6       ;
-;      - lpm_mux:inst107|mux_irc:auto_generated|result_node[2]~15          ; 1                 ; 6       ;
-;      - lpm_mux:inst107|mux_irc:auto_generated|result_node[2]~18          ; 1                 ; 6       ;
-;      - lpm_mux:inst107|mux_irc:auto_generated|result_node[0]~20          ; 1                 ; 6       ;
-;      - lpm_mux:inst107|mux_irc:auto_generated|result_node[0]~21          ; 1                 ; 6       ;
-;      - lpm_mux:inst107|mux_irc:auto_generated|result_node[0]~25          ; 1                 ; 6       ;
-;      - lpm_mux:inst107|mux_irc:auto_generated|result_node[0]~29          ; 1                 ; 6       ;
-; sel[0]                                                                   ;                   ;         ;
-;      - lpm_mux:inst107|mux_irc:auto_generated|result_node[3]~3           ; 0                 ; 6       ;
-;      - lpm_mux:inst107|mux_irc:auto_generated|result_node[3]~4           ; 0                 ; 6       ;
-;      - lpm_mux:inst107|mux_irc:auto_generated|result_node[1]~6           ; 0                 ; 6       ;
-;      - lpm_mux:inst107|mux_irc:auto_generated|result_node[3]~8           ; 0                 ; 6       ;
-;      - lpm_mux:inst107|mux_irc:auto_generated|result_node[2]~18          ; 0                 ; 6       ;
-;      - lpm_mux:inst107|mux_irc:auto_generated|_~3                        ; 0                 ; 6       ;
-;      - lpm_mux:inst107|mux_irc:auto_generated|result_node[0]~20          ; 0                 ; 6       ;
-;      - lpm_mux:inst107|mux_irc:auto_generated|result_node[0]~26          ; 0                 ; 6       ;
+;      - lpm_mux:inst107|mux_irc:auto_generated|result_node[3]~14          ; 0                 ; 6       ;
+;      - lpm_mux:inst107|mux_irc:auto_generated|result_node[3]~15          ; 0                 ; 6       ;
+;      - lpm_mux:inst107|mux_irc:auto_generated|_~0                        ; 0                 ; 6       ;
 ;      - lpm_mux:inst107|mux_irc:auto_generated|result_node[0]~27          ; 0                 ; 6       ;
 ;      - lpm_mux:inst107|mux_irc:auto_generated|result_node[0]~29          ; 0                 ; 6       ;
+; sel[1]                                                                   ;                   ;         ;
+;      - lpm_mux:inst107|mux_irc:auto_generated|result_node[1]~2           ; 0                 ; 6       ;
+;      - lpm_mux:inst107|mux_irc:auto_generated|result_node[3]~4           ; 0                 ; 6       ;
+;      - lpm_mux:inst107|mux_irc:auto_generated|result_node[1]~7           ; 0                 ; 6       ;
+;      - lpm_mux:inst107|mux_irc:auto_generated|result_node[3]~8           ; 0                 ; 6       ;
+;      - lpm_mux:inst107|mux_irc:auto_generated|result_node[3]~10          ; 0                 ; 6       ;
+;      - lpm_mux:inst107|mux_irc:auto_generated|result_node[3]~13          ; 0                 ; 6       ;
+;      - lpm_mux:inst107|mux_irc:auto_generated|result_node[3]~14          ; 0                 ; 6       ;
+;      - lpm_mux:inst107|mux_irc:auto_generated|result_node[3]~16          ; 0                 ; 6       ;
+;      - lpm_mux:inst107|mux_irc:auto_generated|result_node[2]~18          ; 0                 ; 6       ;
+;      - lpm_mux:inst107|mux_irc:auto_generated|result_node[2]~21          ; 0                 ; 6       ;
+;      - lpm_mux:inst107|mux_irc:auto_generated|result_node[0]~23          ; 0                 ; 6       ;
+;      - lpm_mux:inst107|mux_irc:auto_generated|result_node[0]~24          ; 0                 ; 6       ;
+;      - lpm_mux:inst107|mux_irc:auto_generated|result_node[0]~25          ; 0                 ; 6       ;
+;      - lpm_mux:inst107|mux_irc:auto_generated|result_node[0]~32          ; 0                 ; 6       ;
+;      - flags_alu:inst108|inst48~2                                        ; 0                 ; 6       ;
+; sel[0]                                                                   ;                   ;         ;
+;      - lpm_mux:inst107|mux_irc:auto_generated|result_node[3]~3           ; 1                 ; 6       ;
+;      - lpm_mux:inst107|mux_irc:auto_generated|result_node[3]~4           ; 1                 ; 6       ;
+;      - lpm_mux:inst107|mux_irc:auto_generated|result_node[3]~6           ; 1                 ; 6       ;
+;      - lpm_mux:inst107|mux_irc:auto_generated|result_node[3]~8           ; 1                 ; 6       ;
+;      - lpm_mux:inst107|mux_irc:auto_generated|result_node[2]~21          ; 1                 ; 6       ;
+;      - lpm_mux:inst107|mux_irc:auto_generated|_~0                        ; 1                 ; 6       ;
+;      - lpm_mux:inst107|mux_irc:auto_generated|result_node[0]~25          ; 1                 ; 6       ;
+;      - lpm_mux:inst107|mux_irc:auto_generated|result_node[0]~26          ; 1                 ; 6       ;
+;      - lpm_mux:inst107|mux_irc:auto_generated|result_node[0]~30          ; 1                 ; 6       ;
+;      - lpm_mux:inst107|mux_irc:auto_generated|result_node[0]~32          ; 1                 ; 6       ;
+;      - flags_alu:inst108|inst48~2                                        ; 1                 ; 6       ;
 ; sel[2]                                                                   ;                   ;         ;
 ;      - lpm_mux:inst107|mux_irc:auto_generated|result_node[3]~3           ; 0                 ; 6       ;
 ;      - lpm_mux:inst107|mux_irc:auto_generated|result_node[3]~4           ; 0                 ; 6       ;
-;      - lpm_mux:inst107|mux_irc:auto_generated|result_node[1]~6           ; 0                 ; 6       ;
+;      - lpm_mux:inst107|mux_irc:auto_generated|result_node[3]~6           ; 0                 ; 6       ;
 ;      - lpm_mux:inst107|mux_irc:auto_generated|result_node[3]~8           ; 0                 ; 6       ;
-;      - lpm_mux:inst107|mux_irc:auto_generated|result_node[3]~11          ; 0                 ; 6       ;
-;      - lpm_mux:inst107|mux_irc:auto_generated|result_node[2]~19          ; 0                 ; 6       ;
-;      - lpm_mux:inst107|mux_irc:auto_generated|result_node[0]~21          ; 0                 ; 6       ;
-;      - lpm_mux:inst107|mux_irc:auto_generated|result_node[0]~25          ; 0                 ; 6       ;
-;      - lpm_mux:inst107|mux_irc:auto_generated|result_node[0]~28          ; 0                 ; 6       ;
-;      - lpm_mux:inst107|mux_irc:auto_generated|result_node[0]~29          ; 0                 ; 6       ;
+;      - lpm_mux:inst107|mux_irc:auto_generated|result_node[2]~22          ; 0                 ; 6       ;
+;      - lpm_mux:inst107|mux_irc:auto_generated|result_node[0]~23          ; 0                 ; 6       ;
+;      - lpm_mux:inst107|mux_irc:auto_generated|result_node[0]~24          ; 0                 ; 6       ;
+;      - lpm_mux:inst107|mux_irc:auto_generated|result_node[0]~26          ; 0                 ; 6       ;
+;      - lpm_mux:inst107|mux_irc:auto_generated|result_node[0]~32          ; 0                 ; 6       ;
+;      - flags_alu:inst108|inst48~2                                        ; 0                 ; 6       ;
 ; B[0]                                                                     ;                   ;         ;
-;      - lpm_add_sub:inst109|add_sub_gsg:auto_generated|op_1~0             ; 1                 ; 6       ;
-;      - substract_4bits:inst101|4bit_adder:inst1|1bit_adder:inst1|inst1   ; 1                 ; 6       ;
-;      - lpm_mux:inst107|mux_irc:auto_generated|_~2                        ; 1                 ; 6       ;
-;      - substract_4bits:inst101|4bit_adder:inst1|1bit_adder:inst1|inst5~0 ; 1                 ; 6       ;
-;      - lpm_mux:inst107|mux_irc:auto_generated|result_node[0]~20          ; 1                 ; 6       ;
-;      - lpm_mux:inst107|mux_irc:auto_generated|result_node[0]~22          ; 1                 ; 6       ;
-; A[3]                                                                     ;                   ;         ;
-;      - lpm_add_sub:inst109|add_sub_gsg:auto_generated|op_1~6             ; 0                 ; 6       ;
-;      - lpm_mux:inst107|mux_irc:auto_generated|result_node[3]~10          ; 0                 ; 6       ;
-;      - lpm_mux:inst107|mux_irc:auto_generated|result_node[3]~11          ; 0                 ; 6       ;
-;      - lpm_mux:inst107|mux_irc:auto_generated|_~0                        ; 0                 ; 6       ;
-;      - inst104[3]~0                                                      ; 0                 ; 6       ;
-;      - lpm_mux:inst107|mux_irc:auto_generated|result_node[0]~21          ; 0                 ; 6       ;
+;      - lpm_add_sub:inst109|add_sub_gsg:auto_generated|op_1~0             ; 0                 ; 6       ;
+;      - substract_4bits:inst101|4bit_adder:inst1|1bit_adder:inst1|inst1   ; 0                 ; 6       ;
+;      - substract_4bits:inst101|4bit_adder:inst1|1bit_adder:inst1|inst5~0 ; 0                 ; 6       ;
+;      - lpm_mux:inst107|mux_irc:auto_generated|result_node[3]~15          ; 0                 ; 6       ;
 ;      - lpm_mux:inst107|mux_irc:auto_generated|result_node[0]~25          ; 0                 ; 6       ;
+;      - lpm_mux:inst107|mux_irc:auto_generated|result_node[0]~27          ; 0                 ; 6       ;
 ; B[3]                                                                     ;                   ;         ;
 ;      - lpm_add_sub:inst109|add_sub_gsg:auto_generated|op_1~6             ; 1                 ; 6       ;
 ;      - lpm_mux:inst107|mux_irc:auto_generated|result_node[3]~10          ; 1                 ; 6       ;
-;      - lpm_mux:inst107|mux_irc:auto_generated|result_node[3]~11          ; 1                 ; 6       ;
-;      - lpm_mux:inst107|mux_irc:auto_generated|_~0                        ; 1                 ; 6       ;
-;      - inst104[3]~0                                                      ; 1                 ; 6       ;
-;      - lpm_mux:inst107|mux_irc:auto_generated|result_node[0]~21          ; 1                 ; 6       ;
-;      - lpm_mux:inst107|mux_irc:auto_generated|result_node[0]~25          ; 1                 ; 6       ;
+;      - lpm_mux:inst107|mux_irc:auto_generated|result_node[3]~12          ; 1                 ; 6       ;
+;      - lpm_mux:inst107|mux_irc:auto_generated|result_node[3]~13          ; 1                 ; 6       ;
+;      - lpm_mux:inst107|mux_irc:auto_generated|result_node[0]~23          ; 1                 ; 6       ;
+;      - lpm_mux:inst107|mux_irc:auto_generated|result_node[0]~24          ; 1                 ; 6       ;
+; A[3]                                                                     ;                   ;         ;
+;      - lpm_add_sub:inst109|add_sub_gsg:auto_generated|op_1~6             ; 1                 ; 6       ;
+;      - lpm_mux:inst107|mux_irc:auto_generated|result_node[3]~10          ; 1                 ; 6       ;
+;      - lpm_mux:inst107|mux_irc:auto_generated|result_node[3]~12          ; 1                 ; 6       ;
+;      - lpm_mux:inst107|mux_irc:auto_generated|result_node[3]~13          ; 1                 ; 6       ;
+;      - lpm_mux:inst107|mux_irc:auto_generated|result_node[0]~23          ; 1                 ; 6       ;
+;      - lpm_mux:inst107|mux_irc:auto_generated|result_node[0]~24          ; 1                 ; 6       ;
 ; B[2]                                                                     ;                   ;         ;
 ;      - lpm_add_sub:inst109|add_sub_gsg:auto_generated|op_1~4             ; 0                 ; 6       ;
-;      - substract_4bits:inst101|4bit_adder:inst1|1bit_adder:inst3|inst1   ; 0                 ; 6       ;
-;      - lpm_mux:inst107|mux_irc:auto_generated|result_node[2]~15          ; 0                 ; 6       ;
-;      - lpm_mux:inst107|mux_irc:auto_generated|result_node[2]~16          ; 0                 ; 6       ;
+;      - substract_4bits:inst101|4bit_adder:inst1|1bit_adder:inst2|inst5~0 ; 0                 ; 6       ;
 ;      - lpm_mux:inst107|mux_irc:auto_generated|result_node[2]~18          ; 0                 ; 6       ;
-;      - lpm_mux:inst107|mux_irc:auto_generated|result_node[0]~23          ; 0                 ; 6       ;
-;      - lpm_mux:inst107|mux_irc:auto_generated|result_node[0]~24          ; 0                 ; 6       ;
+;      - lpm_mux:inst107|mux_irc:auto_generated|result_node[2]~19          ; 0                 ; 6       ;
+;      - lpm_mux:inst107|mux_irc:auto_generated|result_node[2]~21          ; 0                 ; 6       ;
+;      - lpm_mux:inst107|mux_irc:auto_generated|result_node[0]~28          ; 0                 ; 6       ;
+;      - lpm_mux:inst107|mux_irc:auto_generated|result_node[0]~29          ; 0                 ; 6       ;
 ; A[2]                                                                     ;                   ;         ;
 ;      - lpm_add_sub:inst109|add_sub_gsg:auto_generated|op_1~4             ; 0                 ; 6       ;
-;      - lpm_mux:inst107|mux_irc:auto_generated|_~1                        ; 0                 ; 6       ;
-;      - substract_4bits:inst101|4bit_adder:inst1|1bit_adder:inst3|inst1   ; 0                 ; 6       ;
-;      - lpm_mux:inst107|mux_irc:auto_generated|result_node[2]~15          ; 0                 ; 6       ;
-;      - lpm_mux:inst107|mux_irc:auto_generated|result_node[2]~16          ; 0                 ; 6       ;
+;      - substract_4bits:inst101|4bit_adder:inst1|1bit_adder:inst2|inst5~0 ; 0                 ; 6       ;
+;      - lpm_mux:inst107|mux_irc:auto_generated|result_node[3]~14          ; 0                 ; 6       ;
 ;      - lpm_mux:inst107|mux_irc:auto_generated|result_node[2]~18          ; 0                 ; 6       ;
-;      - lpm_mux:inst107|mux_irc:auto_generated|result_node[0]~23          ; 0                 ; 6       ;
-;      - lpm_mux:inst107|mux_irc:auto_generated|result_node[0]~24          ; 0                 ; 6       ;
+;      - lpm_mux:inst107|mux_irc:auto_generated|result_node[2]~19          ; 0                 ; 6       ;
+;      - lpm_mux:inst107|mux_irc:auto_generated|result_node[2]~21          ; 0                 ; 6       ;
+;      - lpm_mux:inst107|mux_irc:auto_generated|result_node[0]~28          ; 0                 ; 6       ;
+;      - lpm_mux:inst107|mux_irc:auto_generated|result_node[0]~29          ; 0                 ; 6       ;
 +--------------------------------------------------------------------------+-------------------+---------+
 
 
-+-------------------------------------------------+
-; Routing Usage Summary                           ;
-+-----------------------+-------------------------+
-; Routing Resource Type ; Usage                   ;
-+-----------------------+-------------------------+
-; Block interconnects   ; 56 / 342,891 ( < 1 % )  ;
-; C16 interconnects     ; 9 / 10,120 ( < 1 % )    ;
-; C4 interconnects      ; 111 / 209,544 ( < 1 % ) ;
-; Direct links          ; 10 / 342,891 ( < 1 % )  ;
-; Global clocks         ; 0 / 20 ( 0 % )          ;
-; Local interconnects   ; 20 / 119,088 ( < 1 % )  ;
-; R24 interconnects     ; 6 / 9,963 ( < 1 % )     ;
-; R4 interconnects      ; 20 / 289,782 ( < 1 % )  ;
-+-----------------------+-------------------------+
++------------------------------------------------+
+; Routing Usage Summary                          ;
++-----------------------+------------------------+
+; Routing Resource Type ; Usage                  ;
++-----------------------+------------------------+
+; Block interconnects   ; 64 / 342,891 ( < 1 % ) ;
+; C16 interconnects     ; 21 / 10,120 ( < 1 % )  ;
+; C4 interconnects      ; 47 / 209,544 ( < 1 % ) ;
+; Direct links          ; 11 / 342,891 ( < 1 % ) ;
+; Global clocks         ; 0 / 20 ( 0 % )         ;
+; Local interconnects   ; 15 / 119,088 ( < 1 % ) ;
+; R24 interconnects     ; 9 / 9,963 ( < 1 % )    ;
+; R4 interconnects      ; 49 / 289,782 ( < 1 % ) ;
++-----------------------+------------------------+
 
 
 +--------------------------------------------------------------------------+
@@ -1439,41 +1438,55 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------------------------------------------------------------------------------+
 ; LAB Signals Sourced Out                                                       ;
 +-------------------------------------------------+-----------------------------+
-; Number of Signals Sourced Out  (Average = 4.40) ; Number of LABs  (Total = 5) ;
+; Number of Signals Sourced Out  (Average = 5.00) ; Number of LABs  (Total = 5) ;
 +-------------------------------------------------+-----------------------------+
 ; 0                                               ; 0                           ;
 ; 1                                               ; 1                           ;
-; 2                                               ; 1                           ;
+; 2                                               ; 2                           ;
 ; 3                                               ; 0                           ;
-; 4                                               ; 0                           ;
-; 5                                               ; 1                           ;
-; 6                                               ; 1                           ;
+; 4                                               ; 1                           ;
+; 5                                               ; 0                           ;
+; 6                                               ; 0                           ;
 ; 7                                               ; 0                           ;
-; 8                                               ; 1                           ;
+; 8                                               ; 0                           ;
+; 9                                               ; 0                           ;
+; 10                                              ; 0                           ;
+; 11                                              ; 0                           ;
+; 12                                              ; 0                           ;
+; 13                                              ; 0                           ;
+; 14                                              ; 0                           ;
+; 15                                              ; 0                           ;
+; 16                                              ; 1                           ;
 +-------------------------------------------------+-----------------------------+
 
 
-+---------------------------------------------------------------------------+
-; LAB Distinct Inputs                                                       ;
-+---------------------------------------------+-----------------------------+
-; Number of Distinct Inputs  (Average = 9.20) ; Number of LABs  (Total = 5) ;
-+---------------------------------------------+-----------------------------+
-; 0                                           ; 0                           ;
-; 1                                           ; 0                           ;
-; 2                                           ; 0                           ;
-; 3                                           ; 1                           ;
-; 4                                           ; 1                           ;
-; 5                                           ; 0                           ;
-; 6                                           ; 0                           ;
-; 7                                           ; 0                           ;
-; 8                                           ; 0                           ;
-; 9                                           ; 0                           ;
-; 10                                          ; 0                           ;
-; 11                                          ; 1                           ;
-; 12                                          ; 0                           ;
-; 13                                          ; 0                           ;
-; 14                                          ; 2                           ;
-+---------------------------------------------+-----------------------------+
++----------------------------------------------------------------------------+
+; LAB Distinct Inputs                                                        ;
++----------------------------------------------+-----------------------------+
+; Number of Distinct Inputs  (Average = 10.20) ; Number of LABs  (Total = 5) ;
++----------------------------------------------+-----------------------------+
+; 0                                            ; 0                           ;
+; 1                                            ; 0                           ;
+; 2                                            ; 0                           ;
+; 3                                            ; 0                           ;
+; 4                                            ; 1                           ;
+; 5                                            ; 1                           ;
+; 6                                            ; 0                           ;
+; 7                                            ; 0                           ;
+; 8                                            ; 0                           ;
+; 9                                            ; 0                           ;
+; 10                                           ; 1                           ;
+; 11                                           ; 0                           ;
+; 12                                           ; 1                           ;
+; 13                                           ; 0                           ;
+; 14                                           ; 0                           ;
+; 15                                           ; 0                           ;
+; 16                                           ; 0                           ;
+; 17                                           ; 0                           ;
+; 18                                           ; 0                           ;
+; 19                                           ; 0                           ;
+; 20                                           ; 1                           ;
++----------------------------------------------+-----------------------------+
 
 
 +------------------------------------------+
@@ -1552,8 +1565,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; sel[0]             ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; sel[2]             ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; B[0]               ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; A[3]               ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; B[3]               ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; A[3]               ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; B[2]               ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; A[2]               ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 +--------------------+-----------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+
@@ -1638,10 +1651,10 @@ Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
 Info (170191): Fitter placement operations beginning
 Info (170137): Fitter placement was successful
-Info (170192): Fitter placement operations ending: elapsed time is 00:00:01
+Info (170192): Fitter placement operations ending: elapsed time is 00:00:00
 Info (170193): Fitter routing operations beginning
 Info (170195): Router estimated average interconnect usage is 0% of the available device resources
-    Info (170196): Router estimated peak interconnect usage is 0% of the available device resources in the region that extends from location X104_Y0 to location X115_Y11
+    Info (170196): Router estimated peak interconnect usage is 0% of the available device resources in the region that extends from location X104_Y12 to location X115_Y23
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
     Info (170200): Optimizations that may affect the design's timing were skipped
@@ -1652,17 +1665,17 @@ Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
-Info (144001): Generated suppressed messages file D:/Quartus_Labs/Team14_Lab7/output_files/ALU.fit.smsg
+Info (144001): Generated suppressed messages file D:/Quartus_Labs/ProyectoNuevo_Lab7/output_files/ALU.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 5814 megabytes
-    Info: Processing ended: Tue Apr 29 15:24:43 2025
-    Info: Elapsed time: 00:00:09
-    Info: Total CPU time (on all processors): 00:00:16
+    Info: Peak virtual memory: 5819 megabytes
+    Info: Processing ended: Thu May 01 00:12:25 2025
+    Info: Elapsed time: 00:00:08
+    Info: Total CPU time (on all processors): 00:00:15
 
 
 +----------------------------+
 ; Fitter Suppressed Messages ;
 +----------------------------+
-The suppressed messages can be found in D:/Quartus_Labs/Team14_Lab7/output_files/ALU.fit.smsg.
+The suppressed messages can be found in D:/Quartus_Labs/ProyectoNuevo_Lab7/output_files/ALU.fit.smsg.
 
 

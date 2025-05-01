@@ -54,12 +54,15 @@ B[3] => inst105[3].IN0
 B[3] => inst104[3].IN1
 B[3] => substract_4bits:inst101.B[3]
 B[3] => Lab1_LogicalComparators:inst100.B[3]
+sel[0] => flags_alu:inst108.control[0]
 sel[0] => LPM_MUX:inst107.sel[0]
+sel[1] => flags_alu:inst108.control[1]
 sel[1] => LPM_MUX:inst107.sel[1]
+sel[2] => flags_alu:inst108.control[2]
 sel[2] => LPM_MUX:inst107.sel[2]
 negative <= flags_alu:inst108.N
-overflow <= flags_alu:inst108.C
-carry <= flags_alu:inst108.V
+overflow <= inst122.DB_MAX_OUTPUT_PORT_TYPE
+carry <= inst121.DB_MAX_OUTPUT_PORT_TYPE
 alu0 <= result[0].DB_MAX_OUTPUT_PORT_TYPE
 alu1 <= result[1].DB_MAX_OUTPUT_PORT_TYPE
 alu2 <= result[2].DB_MAX_OUTPUT_PORT_TYPE
@@ -67,17 +70,21 @@ alu4 <= result[3].DB_MAX_OUTPUT_PORT_TYPE
 
 
 |ALU|flags_alu:inst108
-Z <= inst99.DB_MAX_OUTPUT_PORT_TYPE
-result[0] => inst99.IN0
-result[1] => inst99.IN2
-result[2] => inst99.IN1
-result[3] => inst99.IN3
+Z <= inst40.DB_MAX_OUTPUT_PORT_TYPE
+result[0] => inst40.IN0
+result[1] => inst40.IN2
+result[2] => inst40.IN1
+result[3] => inst40.IN3
 result[3] => N.DATAIN
 N <= result[3].DB_MAX_OUTPUT_PORT_TYPE
-V <= Overflow.DB_MAX_OUTPUT_PORT_TYPE
-Overflow => V.DATAIN
-C <= Cout.DB_MAX_OUTPUT_PORT_TYPE
-Cout => C.DATAIN
+V <= inst48.DB_MAX_OUTPUT_PORT_TYPE
+control[0] => inst41.IN0
+control[1] => inst42.IN0
+control[2] => inst45.IN1
+control[2] => inst44.IN1
+Overflow => inst48.IN1
+C <= inst47.DB_MAX_OUTPUT_PORT_TYPE
+Carry => inst47.IN1
 
 
 |ALU|LPM_ADD_SUB:inst109
